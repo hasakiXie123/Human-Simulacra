@@ -1,4 +1,4 @@
-# Human Simulacra: A Step toward the Personification of Large Language Models
+# Human Simulacra: Benchmarking the Personification of Large Language Models
 This repository contains the code and data for Human Simulacra. 
 - 🌟For data📖, please refer to [The Human Simulacra Dataset](#dataset).
 - 🌟For reproduction🔍, please refer to [Reproduction](#reproduction).
