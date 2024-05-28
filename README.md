@@ -42,7 +42,7 @@ Large language models (LLMs) are recognized as systems that closely mimic aspect
 
 ### Chat with simulacra based on MACM
 
-### Self report Evaluation
+### Psychology-guided evaluation
 
 <a name="make"></a>
 ## Make your own characters🪄
