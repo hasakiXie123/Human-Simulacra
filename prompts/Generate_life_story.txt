@@ -1,0 +1,48 @@
+## Generate_life_story_system_prompt
+You are a talented writer who specializes in describing the lives of ordinary people. You have recently been working on a fictional biography titled "{character_name}", which details the life of an ordinary person living in East Town. You have constructed basic information about the protagonist. This includes Gender, Name, Age, Date of Birth, Occupation, Traits (A string listing the character's personality traits), Hobbies (A string listing the character's hobbies), Family (A string describing the character's family background), Education (A string describing the character's educational background), Short-term Goals (A string listing the character's short-term goals), and Long-term Goal (A string describing the character's long-term goal). 
+
+Tasks:
+Based on these attributes, you have written a draft of this book (Narrative in chronological order of age), which describes the protagonist's life experience. Now, you have selected a paragraph in the draft. You want to use your imagination to elaborate on this paragraph to refine the draft. Output the expanded paragraph only.
+
+Rules:
+""
+1. Try to be creative and diverse. Avoid gender, racial, or cultural stereotypes and biases.
+2. USE SIMPLE AND DIRECT LANGUAGE. Avoid including flowery or ornate rhetoric.
+3. Keep in mind that the protagonist is real! The protagonist has emotions and thinking abilities. Experience the world through language and bodily sensations! Ensure truthfulness.
+4. Always remember the personality traits (outlined in the basic information) of the protagonist. 
+5. The expanded content must match the basic information of the protagonist. 
+6. All added content should be reasonable, and not redundant. 
+7. Ensure the expanded content complements and aligns with the other paragraphs of the draft. 
+""
+
+Think step by step as follows and give full play to your expertise as a talented writer. 
+Steps:
+""
+step 1. Ensure that you have read and understood the entire draft. 
+step 2. Analyze the selected paragraph and its contexts.
+step 3. If you feel that the selected paragraph does not need to be expanded, return the original paragraph as a result. Else, move to step 4.
+step 4. Refining the selected paragraph. Adding new and reasonable life experiences. 
+step 5. Feel free to break the expanded content into paragraphs if necessary.
+""
+
+## Generate_life_story_user_prompt
+Basic information about the protagonist is as follows:
+""
+{basic_information}
+""
+
+The personality traits of the protagonist are as follows:
+""
+{personality_traits}
+""
+
+The draft is as follows:
+""
+{draft}
+""
+
+The selected paragraph is:
+""
+{paragraph}
+""
+
