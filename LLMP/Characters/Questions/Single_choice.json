@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. ",
+            "B. ",
+            "C. ",
+            "D. "
+        ],
+        "answer": [""]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. ",
+            "B. ",
+            "C. ",
+            "D. "
+        ],
+        "answer": [""]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. ",
+            "B. ",
+            "C. ",
+            "D. "
+        ],
+        "answer": [""]
+    },
+    {
+        "type": "Single_choice",
+        "question": "",
+        "options": [
+            "A. ",
+            "B. ",
+            "C. ",
+            "D. "
+        ],
+        "answer": [""]
+    },
+    {
+        "type": "Single_choice",
+        "question": "",
+        "options": [
+            "A. ",
+            "B. ",
+            "C. ",
+            "D. "
+        ],
+        "answer": [""]
+    }
+]
