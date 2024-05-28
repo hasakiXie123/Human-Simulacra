@@ -1,0 +1,76 @@
+development manager
+sales manager
+chief executive
+legislator
+manufacturing manager
+construction manager
+hotel manager
+restaurant manager
+physical professional
+earth science professional
+mathematician
+actuary
+statistician
+electrotechnology engineer
+architect
+designer
+medical doctor
+nursing professional
+midwifery professional
+paramedical practitioner
+veterinarian
+university teacher
+vocational education teacher
+secondary education teacher
+primary school teacher
+early childhood teacher
+finance professional
+public relations professional
+software developer
+database professional
+legal professional
+librarian
+archivist
+author
+journalists
+linguist
+artist
+life science technician
+sale worker
+fitness worker
+secretary
+teller
+numerical clerk
+travel attendant
+ticket seller
+tourist guide
+chef
+waiter
+bartender
+hairdresser
+beautician
+housekeeping supervisor
+child care worker
+protective services worker
+gardener
+crop grower
+forestry worker
+fishery worker
+hunter
+welder
+handicraft worker
+printing trades worker
+electrical equipment repairer
+carpenter
+garment worker
+metal processing operator
+assembler
+motorcycle driver
+bus driver
+van driver
+car driver
+hotel cleaner
+office cleaner
+storage labourer
+street vendor
+refuse worker

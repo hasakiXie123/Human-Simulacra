@@ -1,0 +1,12 @@
+low-income, nuclear family
+low-income, single-parent family
+low-income, blended family
+low-income, extended family
+middle-income, nuclear family
+middle-income, single-parent family
+middle-income, blended family
+middle-income, extended family
+high-income, nuclear family
+high-income, single-parent family
+high-income, blended family
+high-income, extended family

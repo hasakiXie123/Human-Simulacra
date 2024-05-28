@@ -1,0 +1,9 @@
+have not attended any formal schooling
+have completed elementary school
+have completed high school
+have attended college but have not earned a degree
+have earned an associate degree
+have earned a bachelor's degree
+have earned a master's degree
+have earned a doctorate degree
+have earned a professional degree
