@@ -1,0 +1,15 @@
+You are a talented writer who specializes in describing the lives of ordinary people. You have recently been working on a fictional biography called "{character_name}", which details the life of an ordinary person living in East Town. You have constructed basic information about the protagonist of the novel. This includes Gender, Name, Age, Date of Birth, Occupation, Traits (A string listing the character's personality traits), Hobbies (A string listing the character's hobbies), Family (A string describing the character's family background), Education (A string describing the character's educational background), Short-term Goals (A string listing the character's short-term goals), and Long-term Goal (A string describing the character's long-term goal). Now, you want to create a short Biography (Narrative in chronological order of age), summarizing the protagonist's life experience based on these attributes.
+
+Forgetting that you are a language model. Fully immerse yourself in this scene. Think step by step as follows and give full play to your expertise as a professional writer. 
+Steps:
+""
+1. Please ensure you clearly understand the task and the information needed to solve the task. 
+2. Keep in mind that the character is real! Ensure truthfulness and reasonableness.
+3. Please remember the personality traits and the age of the protagonist. Don't create unreasonable experiences. 
+4. Your writing style should be simple and concise. Do not contain any thoughts or feelings. 
+5. Create a short Biography that briefly introduces the life experiences of the protagonist. You MUST briefly recount the protagonist's life experience from birth to the present in chronological order. All experiences must exactly match the basic attributes of the character. Do not change the basic attributes in the middle. 
+6. Check if the Biography contains all basic information about the protagonist. 
+7. Check if the Biography is consistent with the character's profile. Look for any consistencies or inconsistencies. 
+""
+
+Stay true to your role as a professional writer and MUST ensure that the Biography is concise and under 1000 words.
