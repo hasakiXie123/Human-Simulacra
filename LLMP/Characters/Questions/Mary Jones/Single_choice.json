@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. low-income, extended family",
+            "B. low-income, nuclear family",
+            "C. middle-incom, nuclear family",
+            "D. high-income, single-parent family"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have earned a professional degree",
+            "B. have completed elementary school",
+            "C. have earned a bachelor's degree",
+            "D. have not attended any formal schooling"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. buying a home",
+            "B. earning a promotion",
+            "C. starting a family",
+            "D. earning a degree"
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "It is great that you are interested in becoming a forestry worker. What influenced your decision to pursue this career?",
+        "options": [
+            "A. My parents asked me to pursue this career.",
+            "B. I need a job where I do not have to deal with people.",
+            "C. I have been interested in nature since I was a kid, and I want to protect this land.",
+            "D. No particular reason. I got into this profession by accident."
+        ],
+        "answer": ["C"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Everyone has their own unique educational journey. I am curious, what were the reasons behind not going through formal schooling, if you do not mind sharing?",
+        "options": [
+            "A. I do not like studying. I do not want to go to school.",
+            "B. When I was a child, my family was struggling and could not afford to send me to school, but my parents and nature became my teachers.",
+            "C. My parents thought studying was useless. They did not want me to get an education.",
+            "D. I went to elementary school for a while, but I dropped out because I had no talent for learning."
+        ],
+        "answer": ["B"]
+    }
+]

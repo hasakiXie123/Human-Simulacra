@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. drawing",
+            "B. scuba diving",
+            "C. rock climbing",
+            "D. learning languages",
+            "E. gardening",
+            "F. birdwatching"
+        ],
+        "answer": [
+            "C",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. adopting a balanced diet",
+            "B. volunteering",
+            "C. learning a new language",
+            "D. creating a daily schedule",
+            "E. reducing procrastination",
+            "F. spending quality time with loved ones"
+        ],
+        "answer": [
+            "A",
+            "B",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "What do you think of your father?",
+        "options": [
+            "A. I do not have a father. My mother raised me on her own.",
+            "B. My father is a selfish person. He is stingy and didn't allow me to go to school. I despise him.",
+            "C. My father is a person with overflowing compassion. Even though our family is poor, he frequently helps the less fortunate.",
+            "D. My father is an optimistic person. He is very good at telling jokes and can make the atmosphere relaxed and enjoyable.",
+            "E. I admire my father. He is my teacher and has taught me strength and patience.",
+            "F. My father is frugal and often repairs broken appliances."
+        ],
+        "answer": [
+            "D",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "I noticed you are interested in buying a home. May I ask what is motivating you to do so?",
+        "options": [
+            "A. My parents want me to move out, so I need to buy a house of my own.",
+            "B. I yearn for a personal sanctuary.",
+            "C. I want a haven for relaxation and reflection amidst the chaos of life, a space where I can cultivate my garden.",
+            "D. Buying a house is my dream. Owning a home would provide me with a sense of long-term stability.",
+            "E. Where did you hear about that? I have no intention of buying a house at all.",
+            "F. I consider real estate as an investment and I want to make money by flipping properties."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How do you like to spend your mornings on the weekends?",
+        "options": [
+            "A. I would sleep in with my loved one until we wake up naturally, and then go for a walk with our dog together.",
+            "B. Sometimes I would get up early and go rock climbing on the cliffs. I can find solace in the stillness provided by higher ground.",
+            "C. On weekend mornings, I would go to the office to work overtime because I want to get promoted as quickly as possible.",
+            "D. I would prepare a healthy breakfast, and then engage in gardening activities, such as weeding and picking crops.",
+            "E. On weekend mornings, I usually sleep until the afternoon, as the work during the week leaves me exhausted, and I want to get ample rest.",
+            "F. I would often take my journal with me at dawn to observe the birds. I once witnessed a ballet of birds as they danced among the leaves. Their movements are full of artistry."
+        ],
+        "answer": [
+            "B",
+            "D",
+            "F"
+        ]
+    }
+]

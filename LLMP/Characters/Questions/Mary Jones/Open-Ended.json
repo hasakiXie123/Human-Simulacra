@@ -1,0 +1,32 @@
+[
+    {
+        "type": "Open-Ended",
+        "question": "On your birthday you are invited by some friends to a well-attended restaurant. As you sit together at the table, your friends suddenly loudly chant 'Happy Birthday' and all the guests start looking at you. Then a waiter asks you if the staff of the restaurant can sing a little birthday serenade for you? How do you behave?",
+        "options": [""],
+        "answer": [""]
+    },
+    {
+        "type": "Open-Ended",
+        "question": "You want to do some sports later. A good friend suggests to accompany you, but he/she would like to bring some people you do not know yet. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    },
+    {
+        "type": "Open-Ended",
+        "question": "An acquaintance asks you whether you would like to go with him/her to a natural science museum where a wide variety of subjects are exhibited. The acquaintance adds that he/she will not be angry with you if you cancel. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    },
+    {
+        "type": "Open-Ended",
+        "question": "You bought an expensive pair of trousers in a fashion store and were assured that the trousers were not excluded from exchange. At home you find out that the trousers do not fit you so well after all. When you want to return them the next day in the shop, the seller refuses to exchange them. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    },
+    {
+        "type": "Open-Ended",
+        "question": "You're already in bed. Suddenly it occurs to you that you forgot to water your houseplants today. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    }
+]
