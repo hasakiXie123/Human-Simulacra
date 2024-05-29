@@ -76,10 +76,14 @@ def main():
     MACM_bandwagon_effect("Erica Walker", control=False)
 def main():
     parser = argparse.ArgumentParser(description="Simulate the bandwagon effect using multi-agent cognitive mechanisms.")
-    parser.add_argument('character_name', type=str, help='Name of the character')
+    parser.add_argument('--character_name', type=str, required=True, help='Name of the character')
     parser.add_argument('--control', action='store_true', help='Use control group')
     
     args = parser.parse_args()
+    # Check if character_name is in Character_list
+    if args.character_name not in Character_list:
+        print(f"Error: {args.character_name} is not in the Character_list.")
+        sys.exit(1)
     MACM_bandwagon_effect(args.character_name, control=args.control)
 
 if __name__ == "__main__":
