@@ -39,6 +39,26 @@ Large language models (LLMs) are recognized as systems that closely mimic aspect
 ## Reproduction🔍
 
 ### Installation
+1. To get started, first clone the repository and setup the environment:
+```
+## Set up the environment
+git clone https://github.com/hasakiXie123/Human-Simulacra.git
+cd Human-Simulacra
+
+## Install required packages
+conda env create -f environment.yml
+
+## Activate the environment
+conda activate LLMP
+cd LLMP
+```
+2. Adjust the path section of Config/config.py to suit your situation:
+```python
+## for example, if your current directory is "/root/abc/Human-Simulacra/LLMP"
+for path/directory in the path section of Config/config.py:
+    replace "/root/Desktop/LLMP" with "/root/abc/Human-Simulacra/LLMP"
+    # e.g., Attributes_Directory = "/root/abc/Human-Simulacra/LLMP/Characters/Attributes"
+```
 
 ### Chat with simulacra based on MACM
 
