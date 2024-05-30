@@ -1,4 +1,23 @@
 # Human Simulacra: Benchmarking the Personification of Large Language Models
+<div align="center">
+    <a>Qiujie Xie<sup>1</sup></a>&emsp;
+    <a>Qiming Feng<sup>*1</sup></a>&emsp;
+    <a>Tianqi Zhang<sup>*2</sup></a>&emsp;
+    <a>Qingqiu Li<sup>1</sup></a>&emsp; <br>
+    <a>Linyi Yang<sup>3</sup></a>&emsp;
+    <a>Yuejie Zhang<sup>†1</sup></a>&emsp;
+    <a>Rui Feng<sup>1</sup></a>&emsp; <br>
+    <a>Liang He<sup>4</sup></a>&emsp;
+    <a>Shang Gao<sup>5</sup></a>&emsp;
+    <a>Yue Zhang<sup>3</sup></a>&emsp;
+    <p> <sup>1</sup> School of Computer Science, Shanghai Key Laboratory of Intelligent Information Processing, Fudan University </p> 
+    <p><sup>2</sup> School of Electronic and Information Engineering, Tongji University</p>
+    <p><sup>3</sup> School of Engineering, Westlake University, </p> 
+    <p><sup>4</sup> School of Computer Science and Technology, Shanghai Key Laboratory of Mental Health and Psychological Crisis Intervention, East China Normal University</p> 
+    <p><sup>5</sup> School of Information Technology, Deakin University</p>
+    <p> <sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author</p>
+</div>
+
 This repository contains the code and data for Human Simulacra. 
 - 🌟For data📖, please refer to [The Human Simulacra Dataset](#dataset).
 - 🌟For reproduction🔍, please refer to [Reproduction](#reproduction).
