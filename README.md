@@ -59,9 +59,7 @@ for path/directory in the path section of Config/config.py:
     replace "/root/Desktop/LLMP" with "/root/abc/Human-Simulacra/LLMP"
     # e.g., Attributes_Directory = "/root/abc/Human-Simulacra/LLMP/Characters/Attributes"
 ```
-
-### Chat with simulacra based on MACM/Prompt/RAG
-1. Adjust the following lines of Config/config.py to suit your situation:
+3. Adjust the following lines of Config/config.py to suit your situation:
 ```
 Model_for_evaluation = "gpt-4-1106-preview" # choose the base model for simulacra
 Model_for_agent = "gpt-4-1106-preview" ## agent in MACM
@@ -72,12 +70,15 @@ BASE_URL = "https://api.openai.com/v1" # or any api company
 ```
 If you want to use a local model, for example, a Llama-2-7b model based on the [Fastchat library](https://github.com/lm-sys/FastChat):
 ```
+Model_for_evaluation = "Llama-2-7b" # choose the base model for simulacra
+Model_for_agent = "Llama-2-7b" ## agent in MACM
 OPENAI_API_KEY = "EMPTY"
 OPENAI_BASE_URL = "http://localhost:8000/v1" 
 API_KEY = "EMPTY"
 BASE_URL = "http://localhost:8000/v1" 
 ```
-2. Run the following commands:
+### Chat with simulacra based on MACM/Prompt/RAG
+Run the following commands:
 ```
 ## Chat with simulacra based on the MACM method. The simulacra is simulating Mary Jones.
 python multi_agent_cognitive_mechanism.py --character_name "Mary Jones" --method macm
@@ -88,25 +89,9 @@ python multi_agent_cognitive_mechanism.py --character_name "Mary Jones" --method
 ```
 
 ### Psychology-guided evaluation
-
+We build the evaluation code based on the [OpenCompass library](https://github.com/open-compass/opencompass). 
 ### Bandwagon effect replication
-1. Adjust the following lines of Config/config.py to suit your situation:
-```
-Model_for_evaluation = "gpt-4-1106-preview" # choose the base model for simulacra
-Model_for_agent = "gpt-4-1106-preview" ## agent in MACM
-OPENAI_API_KEY = "Your OPENAI_API_KEY"
-OPENAI_BASE_URL = "https://api.openai.com/v1"
-API_KEY = "Your API_KEY"
-BASE_URL = "https://api.openai.com/v1" # or any api company
-```
-If you want to use a local model, for example, a Llama-2-7b model based on the [Fastchat library](https://github.com/lm-sys/FastChat):
-```
-OPENAI_API_KEY = "EMPTY"
-OPENAI_BASE_URL = "http://localhost:8000/v1" 
-API_KEY = "EMPTY"
-BASE_URL = "http://localhost:8000/v1" 
-```
-2. We currently support replicating the bandwagon effect with MACM-based simulacra, run the following commands:
+We currently support replicating the bandwagon effect with MACM-based simulacra, run the following commands:
 ```
 python bandwagon_effect.py --character_name "Mary Jones"
 ## Controlled experiment (without group pressure)
@@ -127,8 +112,8 @@ python bandwagon_effect.py --character_name "Mary Jones" --control
 Contributions to enhance the usability and quality of this dataset are always welcomed. If you're interested in contributing, feel free to fork this repository, make your changes, and then submit a pull request. For significant changes, please first open an issue to discuss the proposed alterations.
 
 ## Acknowledgements
-- 🌟 We appreciate the guidance of the psychologists from Tongji University throughout the process.
-- 🌟 We build the self report evaluation code based on the [OpenCompass library](https://github.com/open-compass/opencompass).
+- 🌟 We appreciate the guidance of the psychologists from Shanghai Key Laboratory of Mental Health and Psychological Crisis Intervention, School of Computer Science and Technology, East China Normal University throughout the process.
+- 🌟 We build the evaluation code based on the [OpenCompass library](https://github.com/open-compass/opencompass). We appreciate their well-built code, which helped us save some time.
 
 
 
