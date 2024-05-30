@@ -10,12 +10,11 @@
     <a>Liang He<sup>4</sup></a>&emsp;
     <a>Shang Gao<sup>5</sup></a>&emsp;
     <a>Yue Zhang<sup>3</sup></a>&emsp;
-    <p> <sup>1</sup> School of Computer Science, Shanghai Key Laboratory of Intelligent Information Processing, Fudan University </p> 
-    <p><sup>2</sup> School of Electronic and Information Engineering, Tongji University</p>
-    <p><sup>3</sup> School of Engineering, Westlake University, </p> 
-    <p><sup>4</sup> School of Computer Science and Technology, Shanghai Key Laboratory of Mental Health and Psychological Crisis Intervention, East China Normal University</p> 
-    <p><sup>5</sup> School of Information Technology, Deakin University</p>
-    <p> <sup>*</sup> Equal contribution, <sup>†</sup> Corresponding author</p>
+    <p> <sup>1</sup> School of Computer Science, Shanghai Key Laboratory of Intelligent Information Processing, Fudan University, 
+    <sup>2</sup> School of Electronic and Information Engineering, Tongji University, 
+    <sup>3</sup> School of Engineering, Westlake University,  
+    <sup>4</sup> School of Computer Science and Technology, Shanghai Key Laboratory of Mental Health and Psychological Crisis Intervention, East China Normal University,  
+    <sup>5</sup> School of Information Technology, Deakin University</p>
 </div>
 
 This repository contains the code and data for Human Simulacra. 
