@@ -52,6 +52,25 @@ Large language models (LLMs) are recognized as systems that closely mimic aspect
 
 <a name="dataset"></a>
 ## The Human Simulacra Dataset📖
+Using the semi-automated strategy proposed in the paper, we create a multi-grained virtual character dataset named **Human Simulacra**. It comprises about 129k texts across 11 virtual characters, with each character having their unique attributes, biography, and story. We place the data in LLMP/Characters. The structure is explained as follows:
+```
+├─Attributes ## The candidate pools for the attributes of characters.
+├─Memories ## The long-term memories of characters.
+│  ├─Mary Jones
+│  ├─Sara Ochoa
+|  └─...
+├─Questions ## The evaluation questions for characters.
+│  ├─Mary Jones
+│  ├─Sara Ochoa
+|  └─...
+└─Stories ## The life stories of characters.
+    ├─Mary Jones
+    ├─Sara Ochoa
+    └─...
+character_introductions.json ## The biographies of 11 characters.
+character_profiles.json ## The profiles of 11 characters.
+```
+In each story generation, we thoroughly review the generated content to ensure it is free from biases, discrimination, or harmful information. But nothing is perfect, if you find any harmful content, please notify us.
 
 <a name="reproduction"></a>
 ## Reproduction🔍
