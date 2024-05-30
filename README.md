@@ -95,19 +95,61 @@ OPENAI_BASE_URL = "http://localhost:8000/v1"
 API_KEY = "EMPTY"
 BASE_URL = "http://localhost:8000/v1" 
 ```
-### Chat with simulacra based on MACM/Prompt/RAG
+### Chat with simulacrum based on MACM/Prompt/RAG
 Run the following commands:
 ```
-## Chat with simulacra based on the MACM method. The simulacra is simulating Mary Jones.
+## Chat with simulacrum based on the MACM method. The simulacrum is simulating Mary Jones.
 python multi_agent_cognitive_mechanism.py --character_name "Mary Jones" --method macm
-## Chat with simulacra based on the prompt method.
+## Chat with simulacrum based on the prompt method.
 python multi_agent_cognitive_mechanism.py --character_name "Mary Jones" --method prompt
-## Chat with simulacra based on the rag method.
+## Chat with simulacrum based on the rag method.
 python multi_agent_cognitive_mechanism.py --character_name "Mary Jones" --method rag
 ```
 
 ### Psychology-guided evaluation
-We build the evaluation code based on the [OpenCompass library](https://github.com/open-compass/opencompass). 
+In the proposed Psychology-guided evaluation, each character is tested by its own set of questionnaires containing cloze, single-choice and multiple-choice questions. You can find the questions in LLMP/Characters/Questions.
+
+We build the evaluation code based on the [OpenCompass library](https://github.com/open-compass/opencompass). If you want to evaluate simulacra of existing characters:
+1. Modify the following lines of LLMP/opencompass/configs/datasets/LLMP/LLMP_gen_0001.py:
+```python
+## Evaluate blank simulacrum. The simulacrum does not know any information about the target character "Mary Jones".
+Character_name = "Mary Jones" 
+Method_list = [ "base_prompt"]
+## Evaluate prompt-based simulacrum. The simulacrum is simulating Mary Jones.
+Character_name = "Mary Jones" 
+Method_list = [ "base_prompt"]
+## Evaluate rag-based simulacrum. The simulacrum is simulating Mary Jones.
+Character_name = "Mary Jones" 
+Method_list = [ "base_rag"]
+## Evaluate MACM-based simulacrum. The simulacrum is simulating Mary Jones.
+Character_name = "Mary Jones" 
+Method_list = [ "cognitive"]
+```
+2. Run the following commands to start the evaluation. The result will be saved in Outputs/demo:
+```
+python opencompass/run.py /your current directory/LLMP/opencompass/configs/datasets/LLMP/LLMP_gen_single.py -w /your current directory/LLMP/Outputs/demo
+```
+If you want to evaluate simulacra of self-made characters, which are constructed by using our semi-automated strategy:
+1. Place the life story of the character in LLMP/Characters/Stories/(name)/
+2. Prepare questionnaires for the character. We provide templates for each question type at LLMP/Characters/Questions.
+3. Modify the following lines of LLMP/opencompass/configs/datasets/LLMP/LLMP_gen_0001.py:
+```python
+## Evaluate blank simulacrum. The simulacrum does not know any information about the target character.
+Character_name = "(name)" 
+Method_list = [ "base_prompt"]
+## Evaluate prompt-based simulacrum. The simulacrum is simulating (name).
+Character_name = "(name)" 
+Method_list = [ "base_prompt"]
+...
+```
+4. Adjust the following lines of Config/config.py to append your character to the existing list:
+```
+Character_list = ["Mary Jones", ..., "Marsh Zhaleh", (name)]
+```
+5. Run the following commands to start the evaluation. The result will be saved in Outputs/demo:
+```
+python opencompass/run.py /your current directory/LLMP/opencompass/configs/datasets/LLMP/LLMP_gen_single.py -w /your current directory/LLMP/Outputs/demo
+```
 ### Bandwagon effect replication
 We currently support replicating the bandwagon effect with MACM-based simulacra, run the following commands:
 ```
