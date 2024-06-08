@@ -1,11 +1,12 @@
 import argparse
+import sys
 from Config.config import *
 from langchain.schema import (
     SystemMessage,
     HumanMessage,
     AIMessage
 )
-from prompt_templates import Bandwagon_effect_system_prompt_template, Bandwagon_effect_user_prompt_template, Bandwagon_effect_controlled_user_prompt_template
+from prompt_templates import Bandwagon_effect_system_prompt_template, Bandwagon_effect_controlled_system_prompt_template, Bandwagon_effect_user_prompt_template, Bandwagon_effect_controlled_user_prompt_template
 from multi_agent_cognitive_mechanism import Top_agent
 
 ### [standard line, comparison line 1, comparison line 2, comparison line 3, correct response, group response]
@@ -42,6 +43,13 @@ def MACM_bandwagon_effect(character_name, temperature = 0.0, control=True):
         len_2 = experiment_config[0][2],
         len_3 = experiment_config[0][3],
         group_response = experiment_config[0][5]
+    )
+    if control:
+        System_prompt = Bandwagon_effect_controlled_system_prompt_template.format(
+        standard_len = experiment_config[0][0],
+        len_1 = experiment_config[0][1],
+        len_2 = experiment_config[0][2],
+        len_3 = experiment_config[0][3]
     )
     answer = critical_subject.bandwagon_chat(query=System_prompt)
     chat_history = [

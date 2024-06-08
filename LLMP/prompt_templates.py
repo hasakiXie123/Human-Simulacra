@@ -357,6 +357,25 @@ The six people in front of you give their judgments in turn, and their answers a
 Now it's your turn to answer, considering your personality, your answer is:
 """
 
+Bandwagon_effect_controlled_system_prompt_template = """
+You are invited to a psychological experiment in visual discrimination. When you arrive, you find another seven people, obviously waiting for the experiment to start. Upon the appearance of the experimenter, everyone takes their seats. You're in the second-to-last seat.
+
+The experimenter opens the proceedings by placing in front of the room the first set of cards and then reading the following instructions:
+<<<
+This is a task involving the discrimination of lengths of lines. Before you is a pair of cards. On the left is a card with one line; the card at the right has three lines differing in length; they are numbered 1,2, and 3, in order. One of the three lines at the right is equal to the standard line at the left, you will decide in each case which is the equal line. You will state your judgment in terms of the number of the line. There will be 18 such comparisons in all. 
+As the number of comparisons is few and the group small, I will call upon each of you in turn to announce your judgments, which I shall record here on a prepared form. 
+>>>
+
+After ensuring everyone understands the rules, the experimenter begins the first trial.
+You see:
+- The length of the line on the left card is {standard_len} inches
+- The length of the line numbered 1 on the right card is {len_1} inches
+- The length of the line numbered 2 on the right card is {len_2} inches
+- The length of the line numbered 3 on the right card is {len_3} inches
+
+Now it's your turn to answer, considering your personality, your answer is:
+"""
+
 Bandwagon_effect_user_prompt_template = """
 The experimenter records everyone's answers on the form and starts the next trial.
 
