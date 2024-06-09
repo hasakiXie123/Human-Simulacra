@@ -1,4 +1,4 @@
-# Human Simulacra: Benchmarking the Personification of Large Language Models
+# Human Simulacra: Benchmarking the Personification of Large Language Models 
 <div align="center">
     <a>Qiujie Xie<sup>1</sup></a>&emsp;
     <a>Qiming Feng<sup>*1</sup></a>&emsp;
@@ -23,6 +23,9 @@ This repository contains the code and data for Human Simulacra.
 - 🌟If you want to make your own characters with a unique life story🪄, please refer to [Character Customization](#make).
 
 For any questions or concerns regarding this dataset, please feel free to reach out to us. We appreciate your interest and are eager to assist😊.
+![Task](https://img.shields.io/badge/Task-Human%20Simulation-blue.svg)
+![Data License](https://img.shields.io/badge/Data%20License-CC%20BY--NC%204.0-blue.svg)
+
 ## Overview
 Large language models (LLMs) are recognized as systems that closely mimic aspects of human intelligence. This capability has attracted attention from the social science community, who see the potential in leveraging LLMs to replace human participants in experiments, thereby reducing research costs and complexity. In this paper, we introduce a benchmark for large language models personification, including a strategy for constructing virtual characters' life stories from the ground up, a Multi-Agent Cognitive Mechanism capable of simulating human cognitive processes, and a psychology-guided evaluation method to assess human simulations from both self and observational perspectives. Experimental results demonstrate that our constructed simulacra can produce personified responses that align with their target characters. 
 
