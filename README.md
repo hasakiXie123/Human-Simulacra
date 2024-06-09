@@ -23,6 +23,7 @@ This repository contains the code and data for Human Simulacra.
 - 🌟If you want to make your own characters with a unique life story🪄, please refer to [Character Customization](#make).
 
 For any questions or concerns regarding this dataset, please feel free to reach out to us. We appreciate your interest and are eager to assist😊.
+
 ![Task](https://img.shields.io/badge/Task-Human%20Simulation-blue.svg)
 ![Data License](https://img.shields.io/badge/Data%20License-CC%20BY--NC%204.0-blue.svg)
 
