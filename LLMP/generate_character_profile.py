@@ -151,7 +151,7 @@ def main():
     
     infos = generate_characters(candidate_pools, character_number)
     
-    with open("Candidate_character_infos.json", "w", encoding="UTF-8") as file:
+    with open("Candidate_character_profiles.json", "w", encoding="UTF-8") as file:
         json.dump(infos, file, ensure_ascii=False, indent=4, separators=(',', ': '))
 
 if __name__ == "__main__":

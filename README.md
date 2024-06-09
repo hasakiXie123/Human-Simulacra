@@ -70,11 +70,12 @@ Using the semi-automated strategy proposed in the paper, we create a multi-grain
 character_introductions.json ## The biographies of 11 characters.
 character_profiles.json ## The profiles of 11 characters.
 ```
-In each story generation, we thoroughly review the generated content to ensure it is free from biases, discrimination, or harmful information. But nothing is perfect, if you find any harmful content, please notify us.
+In each story generation, we thoroughly review the generated content to ensure it is free from biases, discrimination, or harmful information. If you find any harmful content, please notify us.
 
 <a name="reproduction"></a>
 ## Reproduction🔍
 
+<a name="reproduction-install"></a>
 ### Installation
 1. To get started, first clone the repository and setup the environment:
 ```
@@ -178,15 +179,35 @@ python bandwagon_effect.py --character_name "Mary Jones" --control
 ```
 <a name="make"></a>
 ## Make your own characters🪄
-### Character Attributes
-- Generate attributes randomly
-  
-- Customize attributes
-  
+Please complete the steps in [Reproduction-Installation](#reproduction-install) first. Then, modify the following lines of Config/config.py to suit your situation::
+```
+Model_for_data = "gpt-3.5-turbo" # model for data generation
+Context_length = 128000 # the context length for data generation model
+Iteration_for_story = 10
+Iteration_threshold = 50 # score threshold
+Window_size = 5 # if story length > Context_length, context = [-Window_size, Window_size]
+Continued = False ## for continued story generation
+Continued_story_path = "/root/Desktop/LLMP/Characters/Stories/Erica Walker/Erica Walker-19.txt" ## for continued story generation, if you want use this, please set the argument-Continued to True
+```
+### Character Profiles
+Run the following commands to generate 100 candidate profiles (varied in quality). The result will be saved in Candidate_character_profiles.json, and you can select your favorite character profiles to proceed to the next step.
+```
+python generate_character_profile.py
+```
 ### Character Biography
-
+Run the following commands to generate a short biography for each candidate character within Candidate_character_profiles.json. The result will be saved in Candidate_character_introductions.json.
+```
+python generate_character_profile.py
+```
 ### Life Story Generation
-
+Run the following commands to generate the life stories. You can choose to generate life stories for all candidate characters at once, or specify a particular character to be generated. 
+```
+## generate all at once
+python generate_character_life_story.py
+## generate the life story of Mary Jones
+python generate_character_life_story.py --character_name "Mary Jones"
+```
+To ensure the quality of the life story, we set Iteration_for_story to 10, which means that after every ten rounds of Iteration, we carefully manually review the generated life story to make sure that it does not deviate from the character's personality and does not contain harmful content. For your reference, each life story in the Human Simulacra dataset is expanded through at least **50 rounds** of iteration and incurs at least **three days** of human effort for content reviewing.
 ## Contributing
 Contributions to enhance the usability and quality of this dataset are always welcomed. If you're interested in contributing, feel free to fork this repository, make your changes, and then submit a pull request. For significant changes, please first open an issue to discuss the proposed alterations.
 
