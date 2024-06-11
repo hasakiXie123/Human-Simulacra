@@ -6,7 +6,7 @@
     <a>Qingqiu Li<sup>1</sup></a>&emsp; <br>
     <a>Linyi Yang<sup>3</sup></a>&emsp;
     <a>Yuejie Zhang<sup>†1</sup></a>&emsp;
-    <a>Rui Feng<sup>1</sup></a>&emsp; <br>
+    <a>Rui Feng<sup>†1</sup></a>&emsp; <br>
     <a>Liang He<sup>4</sup></a>&emsp;
     <a>Shang Gao<sup>5</sup></a>&emsp;
     <a>Yue Zhang<sup>3</sup></a>&emsp;
