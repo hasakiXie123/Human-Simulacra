@@ -221,7 +221,16 @@ Contributions to enhance the usability and quality of this dataset are always we
 ## Acknowledgements
 - 🌟 We appreciate the guidance of the psychologists from Shanghai Key Laboratory of Mental Health and Psychological Crisis Intervention, School of Computer Science and Technology, East China Normal University throughout the process.
 - 🌟 We build the evaluation code based on the [OpenCompass library](https://github.com/open-compass/opencompass). We appreciate their well-built code, which helped us save some time.
-
+## Citation
+If you find our work useful, please cite our [paper](https://arxiv.org/abs/2402.18180)😊:
+```bibtex
+@article{xie2024human,
+  title={Human Simulacra: Benchmarking the Personification of Large Language Models}, 
+  author={Xie, Qiuejie and Feng, Qiming and Zhang, Tianqi and Li, Qingqiu and Yang, Linyi and Zhang, Yuejie and Feng, Rui and He, Liang and Gao, Shang and Zhang, Yue},
+  journal={arXiv preprint arXiv:2402.18180},
+  year={2024}
+}
+```
 
 
 
