@@ -1,0 +1,351 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Human_Simulacra",
+  "description": "Human Simulacra is a virtual character dataset that contains 129k texts across 11 virtual characters, with each character having unique attributes, biographies, and stories. ",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "\n            @article{xie2024human,\n                title={Human Simulacra: Benchmarking the Personification of Large Language Models}, \n                author={Xie, Qiuejie and Feng, Qiming and Zhang, Tianqi and Li, Qingqiu and Yang, Linyi and Zhang, Yuejie and Feng, Rui and He, Liang and Gao, Shang and Zhang, Yue},\n                journal={arXiv preprint arXiv:2402.18180},\n                year={2024}\n            }\n        ",
+  "datePublished": "2024-02-28T00:00:00",
+  "license": "Creative Commons Attribution Non Commercial Share Alike 4.0",
+  "url": "https://github.com/hasakiXie123/Human-Simulacra/tree/main",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "Human_Simulacra",
+      "contentUrl": "https://github.com/hasakiXie123/Human-Simulacra/tree/main/LLMP/Characters",
+      "encodingFormat": "application/zip",
+      "sha256": "fb1efc21be696292c2e3ddcf98350a0d7261a3000953f5c2d6dc810ac2e649ec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "character_introductions.json",
+      "containedIn": {
+        "@id": "Human_Simulacra"
+      },
+      "contentUrl": "character_introductions.json",
+      "encodingFormat": "text/json",
+      "sha256": "fb1efc21be696292c2e3ddcf98350a0d7261a3000953f5c2d6dc810ac2e649ec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "character_profiles.json",
+      "containedIn": {
+        "@id": "Human_Simulacra"
+      },
+      "contentUrl": "character_profiles.json",
+      "encodingFormat": "text/json",
+      "sha256": "90c93edc1f3bee88ea766f3c1a2508ad73c94a486771c675fc9d847545f52592"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "character_introductions",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "character_introductions/ID",
+          "name": "ID",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_introductions.json"
+            },
+            "extract": {
+              "column": "ID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_introductions/Name",
+          "name": "Name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_introductions.json"
+            },
+            "extract": {
+              "column": "Name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_introductions/Personality_traits",
+          "name": "Personality_traits",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_introductions.json"
+            },
+            "extract": {
+              "column": "Personality_traits"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_introductions/Basic_infos",
+          "name": "Basic_infos",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_introductions.json"
+            },
+            "extract": {
+              "column": "Basic_infos"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_introductions/Content",
+          "name": "Content",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_introductions.json"
+            },
+            "extract": {
+              "column": "Content"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "character_profiles",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/ID",
+          "name": "ID",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "ID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Gender",
+          "name": "Gender",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Gender"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Name",
+          "name": "Name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Age",
+          "name": "Age",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Age"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Date_of_birth",
+          "name": "Date_of_birth",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Date_of_birth"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Photo",
+          "name": "Photo",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Photo"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Occupation",
+          "name": "Occupation",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Occupation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Traits",
+          "name": "Traits",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Traits"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Hobbies",
+          "name": "Hobbies",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Hobbies"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Family",
+          "name": "Family",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Family"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Education",
+          "name": "Education",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Education"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Short-term_goals",
+          "name": "Short-term_goals",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Short-term_goals"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "character_profiles/Long-term_goal",
+          "name": "Long-term_goal",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "character_profiles.json"
+            },
+            "extract": {
+              "column": "Long-term_goal"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
