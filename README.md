@@ -28,7 +28,7 @@ For any questions or concerns regarding this dataset, please feel free to reach 
 ![Data License](https://img.shields.io/badge/Data%20License-CC%20BY--NC--SA%204.0-blue.svg)
 
 ## Overview
-Large language models (LLMs) are recognized as systems that closely mimic aspects of human intelligence. This capability has attracted attention from the social science community, who see the potential in leveraging LLMs to replace human participants in experiments, thereby reducing research costs and complexity. In this paper, we introduce a benchmark for large language models personification, including a strategy for constructing virtual characters' life stories from the ground up, a Multi-Agent Cognitive Mechanism capable of simulating human cognitive processes, and a psychology-guided evaluation method to assess human simulations from both self and observational perspectives. Experimental results demonstrate that our constructed simulacra can produce personified responses that align with their target characters. 
+Large language models (LLMs) are recognized as systems that closely mimic aspects of human intelligence. This capability has attracted attention from the social science community, who see the potential in leveraging LLMs to replace human participants in experiments, thereby reducing research costs and complexity. In this paper, **we introduce a benchmark for large language models personification, including a strategy for constructing virtual characters' life stories from the ground up, a Multi-Agent Cognitive Mechanism capable of simulating human cognitive processes, and a psychology-guided evaluation method to assess human simulations from both self and observational perspectives.** Experimental results demonstrate that our constructed simulacra can produce personified responses that align with their target characters. 
 
 <div align="center">
 <a href="https://github.com/hasakiXie123/Human-Simulacra/">
@@ -141,7 +141,7 @@ We build the evaluation code based on the [OpenCompass library](https://github.c
 ```python
 ## Evaluate blank simulacrum. The simulacrum does not know any information about the target character "Mary Jones".
 Character_name = "Mary Jones" 
-Method_list = [ "base_prompt"]
+Method_list = [ "none"]
 ## Evaluate prompt-based simulacrum. The simulacrum is simulating Mary Jones.
 Character_name = "Mary Jones" 
 Method_list = [ "base_prompt"]
@@ -163,7 +163,7 @@ If you want to evaluate simulacra of self-made characters, which are constructed
 ```python
 ## Evaluate blank simulacrum. The simulacrum does not know any information about the target character.
 Character_name = "(name)" 
-Method_list = [ "base_prompt"]
+Method_list = [ "none"]
 ## Evaluate prompt-based simulacrum. The simulacrum is simulating (name).
 Character_name = "(name)" 
 Method_list = [ "base_prompt"]
