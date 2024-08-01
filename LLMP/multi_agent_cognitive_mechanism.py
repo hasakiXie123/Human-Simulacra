@@ -10,6 +10,7 @@ import openai
 import json
 import re
 import sys
+from colorama import Fore, Style
 
 from Config.config import *
 from prompt_templates import *
@@ -407,6 +408,16 @@ class Top_agent:
             query = input()
             if query.lower() == "exit":
                 break  
+            
+            if chat_history:
+                history = "\n".join(chat_history)
+                context = "You're chatting with someone in a coffee shop. This is your conversation record: <<<\n" + history + ">>>"
+                current_messages.append(SystemMessage(content=context))
+            else:
+                current_messages.append(SystemMessage(content="You're chatting with someone in a coffee shop."))
+            
+            current_messages.append(HumanMessage(content=query))
+            
             memory_retrieval = self.Memory_Agent.Memory_Retrieval(query)
             thinking = self.Thinking_Agent.Thinking_analysis(query)
             emotion = self.Emotion_Agent.Emotion_analysis(query)
@@ -417,34 +428,26 @@ class Top_agent:
                     memory = memory,
                 )
                 user_prompt = Multi_agent_cognitive_system_chat_prompt_template.format(
-                    query = query,
-                    memory = memory,
                     thinking = thinking,
                     emotion = emotion,
                     personality_traits = self.personality_traits
                 )
-                messages.append(SystemMessage(content=memory_prompt))
+                current_messages.append(SystemMessage(content=memory_prompt))
             else:
                 # No related content in memory, retrieval failed
-                user_prompt = Multi_agent_cognitive_system_simple_chat_prompt_template.format(
-                    query = query,
+                user_prompt = Multi_agent_cognitive_system_chat_prompt_template.format(
                     thinking = thinking,
                     emotion = emotion,
                     personality_traits = self.personality_traits
                 )
-            if chat_history:
-                history = "\n".join(chat_history)
-                context = "You're chatting with someone in a coffee shop. This is your conversation record: <<<\n" + history + ">>>"
-                current_messages.append(HumanMessage(content=context))
-            else:
-                current_messages.append(HumanMessage(content="You're chatting with someone in a coffee shop."))
-            current_messages.append(HumanMessage(content=user_prompt))
-            agents_ans = self.chat(current_messages).content
-            print(agents_ans)
-            chat_history.append(query)
-            chat_history.append(agents_ans)
             
-        print("The conversation is over.")
+            current_messages.append(SystemMessage(content=user_prompt))
+            agents_ans = self.chat(current_messages).content
+            print(Fore.GREEN + agents_ans + Style.RESET_ALL)
+            chat_history.append("The other person: " + query)
+            chat_history.append("You: " + agents_ans)
+            
+        print(Fore.RED + "The conversation is over." + Style.RESET_ALL)
         
     def bandwagon_chat(self, query, chat_history=None):
         """
@@ -549,17 +552,17 @@ def Multi_turn_chat_with_naive_prompt(character_name):
         if chat_history:
             history = "\n".join(chat_history)
             context = "You're chatting with someone in a coffee shop. This is your conversation record: <<<\n" + history + ">>>"
-            current_messages.append(HumanMessage(content=context))
+            current_messages.append(SystemMessage(content=context))
         else:
-            current_messages.append(HumanMessage(content="You're chatting with someone in a coffee shop."))
-        user_prompt = f"The one you are chatting with said:<<<{query}>>>"
-        current_messages.append(HumanMessage(content=user_prompt))
+            current_messages.append(SystemMessage(content="You're chatting with someone in a coffee shop."))
+
+        current_messages.append(HumanMessage(content=query))
         agents_ans = chat(current_messages).content
-        print(agents_ans)
+        print(Fore.GREEN + agents_ans + Style.RESET_ALL)
         chat_history.append(query)
         chat_history.append(agents_ans)
             
-    print("The conversation is over.")
+    print(Fore.RED + "The conversation is over." + Style.RESET_ALL)
     
 
 def Multi_turn_chat_with_naive_rag(character_name):
@@ -623,18 +626,18 @@ def Multi_turn_chat_with_naive_rag(character_name):
         if chat_history:
             history = "\n".join(chat_history)
             context = "You're chatting with someone in a coffee shop. This is your conversation record: <<<\n" + history + ">>>"
-            current_messages.append(HumanMessage(content=context))
+            current_messages.append(SystemMessage(content=context))
         else:
-            current_messages.append(HumanMessage(content="You're chatting with someone in a coffee shop."))
+            current_messages.append(SystemMessage(content="You're chatting with someone in a coffee shop."))
             
         user_prompt = f"The one you are chatting with said:<<<{query}>>>"
         current_messages.append(HumanMessage(content=user_prompt))
         agents_ans = chat(current_messages).content
-        print(agents_ans)
+        print(Fore.GREEN + agents_ans + Style.RESET_ALL)
         chat_history.append(query)
         chat_history.append(agents_ans)
             
-    print("The conversation is over.")
+    print(Fore.RED + "The conversation is over." + Style.RESET_ALL)
   
 def main():
     # Initialize argument parser
@@ -655,10 +658,10 @@ def main():
 
     # Execute based on method
     if args.method == "rag":
-        print(f"Starting multi-turn chat with RAG method for {args.character_name}. Type 'exit' to end the chat.")
+        print(Fore.RED + f"Starting multi-turn chat with RAG method for {args.character_name}. Type 'exit' to end the chat." + Style.RESET_ALL)
         Multi_turn_chat_with_naive_rag(args.character_name)
     elif args.method == "macm":
-        print(f"Starting multi-turn chat with MACM method for {args.character_name}. Type 'exit' to end the chat.")
+        print(Fore.RED + f"Starting multi-turn chat with MACM method for {args.character_name}. Type 'exit' to end the chat." + Style.RESET_ALL)
         agent = Top_agent(args.character_name, temperature=args.temperature)
         memory_path = os.path.join(Memory_Directory, args.character_name, "long_memory.json")
         if not os.path.exists(memory_path):
@@ -667,7 +670,7 @@ def main():
             print("Long memory construction completed.")
         agent.multi_turn_chat()
     else:
-        print(f"Starting multi-turn chat with prompt method for {args.character_name}. Type 'exit' to end the chat.")
+        print(Fore.RED + f"Starting multi-turn chat with prompt method for {args.character_name}. Type 'exit' to end the chat." + Style.RESET_ALL)
         Multi_turn_chat_with_naive_prompt(args.character_name)
 
 if __name__ == "__main__":
