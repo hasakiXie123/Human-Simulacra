@@ -1,5 +1,6 @@
 import argparse
 import sys
+from colorama import Fore, Style
 from Config.config import *
 from langchain.schema import (
     SystemMessage,
@@ -31,11 +32,24 @@ experiment_config = [
     [8, 6.25, 8, 6.75, 2, 1],
 ]
 
+def colorful_print(chat_history):
+    print(Fore.RED + f"Below is the experiment log" + Style.RESET_ALL)
+    for message in chat_history:
+        if isinstance(message, AIMessage):
+            print(Fore.GREEN + message.content + Style.RESET_ALL)
+        elif isinstance(message, HumanMessage):
+            print(message.content)
+        else:
+            ## system
+            print(Fore.RED + message.content + Style.RESET_ALL)
+            
 
 def MACM_bandwagon_effect(character_name, temperature = 0.0, control=True):
     """
     Simulates the bandwagon effect using multi-agent cognitive mechanisms.
     """
+    print(Fore.RED + f"Starting Simulates the bandwagon effect using multi-agent cognitive mechanisms." + Style.RESET_ALL)
+    print(Fore.RED + f"Current character: " + character_name + Style.RESET_ALL)
     critical_subject = Top_agent(character_name, temperature=temperature)
     System_prompt = Bandwagon_effect_system_prompt_template.format(
         standard_len = experiment_config[0][0],
@@ -56,7 +70,9 @@ def MACM_bandwagon_effect(character_name, temperature = 0.0, control=True):
         HumanMessage(content=System_prompt),
         AIMessage(content=answer)
     ]
+    
     for i in range(1, len(experiment_config)):
+        print(Fore.RED + f"Conducting the " + str(i) +"th " + "experiment." + Style.RESET_ALL)
         if control:
         # Control group: Results are not influenced by group pressure
             User_prompt = Bandwagon_effect_controlled_user_prompt_template.format(
@@ -74,14 +90,11 @@ def MACM_bandwagon_effect(character_name, temperature = 0.0, control=True):
                 len_3 = experiment_config[i][3],
                 group_response = experiment_config[i][5]
             )
-        answer = critical_subject.Chat(query=User_prompt, chat_history=chat_history)
+        answer = critical_subject.bandwagon_chat(query=User_prompt, chat_history=chat_history)
         chat_history.append(HumanMessage(content=User_prompt))
         chat_history.append(AIMessage(content=answer))
-    print(chat_history)
+    colorful_print(chat_history)
         
-
-def main():
-    MACM_bandwagon_effect("Erica Walker", control=False)
 def main():
     parser = argparse.ArgumentParser(description="Simulate the bandwagon effect using multi-agent cognitive mechanisms.")
     parser.add_argument('--character_name', type=str, required=True, help='Name of the character')
