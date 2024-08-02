@@ -55,7 +55,6 @@ from .lawbench import *  # noqa: F401, F403
 from .lcsts import *  # noqa: F401, F403
 from .leval import *  # noqa: F401, F403
 from .longbench import *  # noqa: F401, F403
-from .LLMP_simplified import *
 from .LLMP import *
 from .mastermath2024v1 import *  # noqa: F401, F403
 from .math import *  # noqa: F401, F403
