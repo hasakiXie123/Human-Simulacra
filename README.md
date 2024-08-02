@@ -96,6 +96,11 @@ conda env create -f environment.yml
 ## Activate the environment
 conda activate LLMP
 cd LLMP
+
+## Install OpenCompass for Psychology-guided evaluation
+cd opencompass
+pip install -e .
+cd ../
 ```
 2. Adjust the path section of Config/config.py to suit your situation:
 ```python
@@ -139,6 +144,7 @@ In the proposed Psychology-guided evaluation, each character is tested by its ow
 We build the evaluation code based on the [OpenCompass library](https://github.com/open-compass/opencompass). If you want to evaluate simulacra of existing characters:
 1. Modify the following lines of LLMP/opencompass/configs/datasets/LLMP/LLMP_gen_0001.py:
 ```python
+Question_Directory = "/root/abc/Human-Simulacra/LLMP/Characters/Questions" ## Please ensure consistency with your config file
 ## Evaluate blank simulacrum. The simulacrum does not know any information about the target character "Mary Jones".
 Character_name = "Mary Jones" 
 Method_list = [ "none"]
