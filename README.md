@@ -192,7 +192,7 @@ python bandwagon_effect.py --character_name "Mary Jones" --control
 ```
 <a name="make"></a>
 ## Make your own characters🪄
-Please complete the steps in [Reproduction-Installation](#reproduction-install) first. Then, modify the following lines of Config/config.py to suit your situation::
+Please complete the steps in [Reproduction-Installation](#reproduction-install) first. Then, modify the following lines of Config/config.py to suit your situation:
 ```
 Model_for_data = "gpt-3.5-turbo" # model for data generation
 Context_length = 128000 # the context length for data generation model
@@ -210,7 +210,7 @@ python generate_character_profile.py
 ### Character Biography
 Run the following commands to generate a short biography for each candidate character within Candidate_character_profiles.json. The result will be saved in Candidate_character_introductions.json.
 ```
-python generate_character_profile.py
+python generate_character_introduction.py
 ```
 ### Life Story Generation
 Run the following commands to generate the life stories. You can choose to generate life stories for all candidate characters at once, or specify a particular character to be generated. 
@@ -220,7 +220,18 @@ python generate_character_life_story.py
 ## generate the life story of Mary Jones
 python generate_character_life_story.py --character_name "Mary Jones"
 ```
-To ensure the quality of the life story, we set Iteration_for_story to 10, which means that after every ten rounds of Iteration, we carefully manually review the generated life story to make sure that it does not deviate from the character's personality and does not contain harmful content. For your reference, each life story in the Human Simulacra dataset is expanded through at least **50 rounds** of iteration and incurs at least **three days** of human effort for content reviewing.
+To ensure the quality of the life story, we set Iteration_for_story to 10, which means that after every ten rounds of Iteration, we will suspend the generation and manually review the generated life story to make sure that it does not deviate from the character's personality and does not contain harmful content. For your reference, each life story in the Human Simulacra dataset is expanded through at least **50 rounds** of iteration and incurs at least **three days** of human effort for content reviewing.
+### Continued Generation
+Modify the following lines of Config/config.py to suit your situation:
+```
+Continued = True ## for continued story generation
+Continued_story_path = "/root/Desktop/LLMP/Characters/Stories/Erica Walker/Erica Walker-19.txt" ## for continued story generation, if you want use this, please set the argument-Continued to True
+```
+Run the following commands to continue iterating the story.
+```
+## generate the life story of Mary Jones
+python generate_character_life_story.py --character_name "Mary Jones"
+```
 ## Contributing
 Contributions to enhance the usability and quality of this dataset are always welcomed. If you're interested in contributing, feel free to fork this repository, make your changes, and then submit a pull request. For significant changes, please first open an issue to discuss the proposed alterations.
 
