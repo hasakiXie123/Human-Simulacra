@@ -225,7 +225,7 @@ To ensure the quality of the life story, we set Iteration_for_story to 10, which
 Modify the following lines of Config/config.py to suit your situation:
 ```
 Continued = True ## for continued story generation
-Continued_story_path = "/root/Desktop/LLMP/Characters/Stories/Erica Walker/Erica Walker-19.txt" ## for continued story generation, if you want use this, please set the argument-Continued to True
+Continued_story_path = "/root/Desktop/LLMP/Characters/Stories/Erica Walker/Mary Jones-19.txt" ## for continued story generation, if you want use this, please set the argument-Continued to True
 ```
 Run the following commands to continue iterating the story.
 ```
