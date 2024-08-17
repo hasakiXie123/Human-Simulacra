@@ -121,8 +121,15 @@ def generate_one_gpt(introduction):
             draft = assemble_context(life_story, expandable_chunk_idx)
         else:
             draft = "\n\n".join(life_story)
+        character_infos = introduction["Basic_infos"]
+        if introduction["Extra"]:
+            # Convert the Extra dictionary to a string format
+            extra_info_str = ', '.join([f"{key}: {value}" for key, value in introduction["Extra"].items()])
+            character_infos = character_infos.strip('"\n') 
+            # Append the Extra information to the Basic_infos string and restore the original format
+            character_infos = f"\"\"\n" + character_infos.rstrip(".") + f", {extra_info_str}.\n\"\"\n"
         user_prompt = Generate_life_story_user_prompt_template.format(
-            basic_information = introduction["Basic_infos"],
+            basic_information = character_infos,
             draft = draft,
             personality_traits = introduction["Personality_traits"],
             paragraph = life_story[expandable_chunk_idx],
@@ -170,10 +177,11 @@ def main():
     with open(Introductions_Path, "r", encoding="UTF-8") as file:
         introductions = json.load(file)
     
-    if args.character:
+    if args.character_name:
         for intro in introductions:
-            if intro["Name"] == args.character:
+            if intro["Name"] == args.character_name:
                 generate_one_gpt(intro)
+                break
     else:
         generate_all(introductions)
 
