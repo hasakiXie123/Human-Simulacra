@@ -54,6 +54,7 @@ def main():
             end = temp_str.find("Hobbies:", start)
             Basic_infos = temp_str[:start] + temp_str[end:]
             introduction["Basic_infos"] = Basic_infos
+            introduction["Extra"] = {}
             introduction['Content'] = response.choices[0].message.content
             introductions.append(introduction)
             
