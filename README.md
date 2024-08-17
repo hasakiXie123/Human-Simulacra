@@ -21,6 +21,7 @@ This repository contains the code and data for Human Simulacra.
 - 🌟For data📖, please refer to [The Human Simulacra Dataset](#dataset).
 - 🌟For reproduction🔍, please refer to [Reproduction](#reproduction).
 - 🌟If you want to make your own characters with a unique life story🪄, please refer to [Character Customization](#make).
+- 🌟If you want to edit existing characters🔨, please refer to [Character Modification](#edit).
 
 For any questions or concerns regarding this dataset, please feel free to reach out to us. We appreciate your interest and are eager to assist😊.
 
@@ -147,16 +148,16 @@ We build the evaluation code based on the [OpenCompass library](https://github.c
 Question_Directory = "/root/abc/Human-Simulacra/LLMP/Characters/Questions" ## Please ensure consistency with your config file
 ## Evaluate blank simulacrum. The simulacrum does not know any information about the target character "Mary Jones".
 Character_name = "Mary Jones" 
-Method_list = [ "none"]
+Method_list = ["none"]
 ## Evaluate prompt-based simulacrum. The simulacrum is simulating Mary Jones.
 Character_name = "Mary Jones" 
-Method_list = [ "base_prompt"]
+Method_list = ["base_prompt"]
 ## Evaluate rag-based simulacrum. The simulacrum is simulating Mary Jones.
 Character_name = "Mary Jones" 
-Method_list = [ "base_rag"]
+Method_list = ["base_rag"]
 ## Evaluate MACM-based simulacrum. The simulacrum is simulating Mary Jones.
 Character_name = "Mary Jones" 
-Method_list = [ "cognitive"]
+Method_list = ["cognitive"]
 ```
 2. Run the following commands to start the evaluation. The result will be saved in Outputs/demo:
 ```
@@ -169,10 +170,10 @@ If you want to evaluate simulacra of self-made characters, which are constructed
 ```python
 ## Evaluate blank simulacrum. The simulacrum does not know any information about the target character.
 Character_name = "(name)" 
-Method_list = [ "none"]
+Method_list = ["none"]
 ## Evaluate prompt-based simulacrum. The simulacrum is simulating (name).
 Character_name = "(name)" 
-Method_list = [ "base_prompt"]
+Method_list = ["base_prompt"]
 ...
 ```
 4. Adjust the following lines of Config/config.py to append your character to the existing list:
@@ -184,15 +185,31 @@ Character_list = ["Mary Jones", ..., "Marsh Zhaleh", (name)]
 python opencompass/run.py /your current directory/LLMP/opencompass/configs/datasets/LLMP/LLMP_gen_single.py -w /your current directory/LLMP/Outputs/demo
 ```
 ### Bandwagon effect replication
-We currently support replicating the bandwagon effect with MACM-based simulacra, run the following commands:
+We currently support replicating the bandwagon effect with prompt-/RAG-/MACM-based simulacra, run the following commands:
 ```
-python bandwagon_effect.py --character_name "Mary Jones"
+python bandwagon_effect.py --character_name "Mary Jones" --method "macm"
 ## Controlled experiment (without group pressure)
-python bandwagon_effect.py --character_name "Mary Jones" --control
+python bandwagon_effect.py --character_name "Mary Jones" --method "macm" --control
 ```
+### An alternative method for human evaluation (Observer report)
+To facilitate future research on this benchmark, we further proposed an alternative method for human evaluation. This method involves using the 640 personality descriptions constructed in this paper to perform an eight-dimensional personality test and comparing the results to the assigned personality for similarity. In experiments, the scores calculated using this method had a **Pearson correlation coefficient of 0.810 and an Intraclass Correlation Coefficient of 0.877** with the human evaluation scores.
+
+Please mmodify the following lines of LLMP/opencompass/configs/datasets/LLMP/LLMP_gen_0001.py first:
+```python
+Question_type = ["Jung_cognitive_function_test"]
+Character_name = "Mary Jones" 
+Method_list = ["base_prompt"] # or base_rag/cognitive
+```
+
+Then, run the following commands:
+```
+## Please ensure that both if_extract and if_rerun are set to True when running the file for the first time.
+python Jung_cognitive_function_test.py --character_name "Mary Jones" --method "prompt" --if_extract --if_rerun 
+```
+
 <a name="make"></a>
 ## Make your own characters🪄
-Please complete the steps in [Reproduction-Installation](#reproduction-install) first. Then, modify the following lines of Config/config.py to suit your situation:
+Please complete the steps in [Reproduction-Installation](#reproduction-install) first. Then, download the weight of summarization model (we use [pszemraj/led-large-book-summary](https://huggingface.co/pszemraj/led-large-book-summary) and [Falconsai/text_summarization](https://huggingface.co/Falconsai/text_summarization/tree/main) from Hugging Face) and embedding model ([sentence-transformers/all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) from Hugging Face), put them into LLMP/LLMs. Finally, modify the following lines of Config/config.py to suit your situation:
 ```
 Model_for_data = "gpt-3.5-turbo" # model for data generation
 Context_length = 128000 # the context length for data generation model
@@ -212,6 +229,8 @@ Run the following commands to generate a short biography for each candidate char
 ```
 python generate_character_introduction.py
 ```
+
+<a name="#life-story-generation"></a>
 ### Life Story Generation
 Run the following commands to generate the life stories. You can choose to generate life stories for all candidate characters at once, or specify a particular character to be generated. 
 ```
@@ -221,6 +240,8 @@ python generate_character_life_story.py
 python generate_character_life_story.py --character_name "Mary Jones"
 ```
 To ensure the quality of the life story, we set Iteration_for_story to 10, which means that after every ten rounds of Iteration, we will suspend the generation and manually review the generated life story to make sure that it does not deviate from the character's personality and does not contain harmful content. For your reference, each life story in the Human Simulacra dataset is expanded through at least **50 rounds** of iteration and incurs at least **three days** of human effort for content reviewing.
+
+<a name="#continued-generation"></a>
 ### Continued Generation
 Modify the following lines of Config/config.py to suit your situation:
 ```
@@ -232,6 +253,36 @@ Run the following commands to continue iterating the story.
 ## generate the life story of Mary Jones
 python generate_character_life_story.py --character_name "Mary Jones"
 ```
+
+<a name="edit"></a>
+## Edit existing characters🔨
+We now support adding new character attributes (e.g., favorite color, favorite author) or new life experiences to an existing character😊. 
+
+Before you proceed, please first confirm whether the character you wish to modify originates from the Human Simulacra dataset or if it is among the self-made characters, which are constructed using our semi-automated strategy. If it's the latter, please complete the following steps:
+
+1. Place the life story of the character in LLMP/Characters/Stories/(name)/
+2. Append the introduction of the character to LLMP/Characters/character_introductions.json
+
+Then, run the following commands to add new character attributes or new life experiences.
+```
+agent = Top_agent("Mary Jones")
+agent.add_new_attributes({"Favorite Color": "Green", "Favorite Author": "Ada Lovelace"})
+agent.add_long_memory("Mary's favorite color is green, and her favorite author is Ada Lovelace.")
+```
+
+Now😊, you can ask Mary what her favorite color is, and she will respond like this: ''It's green. Always loved how it reminds me of nature and the outdoors.'' 
+
+We further support iterating the life story of a character based on newly added character attributes. You can proceed with the iteration following the tutorial in [Continued-Generation](#continued-generation). However, if you wish for the newly added character attributes to influence the entire life story of the character, we recommend regenerating the story from the beginning ([Life-Story-Generation](#life-story-generation)) to ensure the quality of the narrative.
+
+## Maintenance Log
+| Dates      | Maintenance Content         |
+|------------|-----------------|
+| Jun 8, 2024 | 	Update code, fix bugs.   |
+| Jun 11, 2024 |    Release new features, support replicating the bandwagon effect with prompt-/RAG-/MACM-based simulacra.         |
+| Jun 12, 2024 |    Release new features, support adding new character attributes or new life experiences to an existing character.         |
+| Jun 15, 2024 |    Release new features, support performing an eight-dimensional personality test to the character.         |
+
+
 ## Contributing
 Contributions to enhance the usability and quality of this dataset are always welcomed. If you're interested in contributing, feel free to fork this repository, make your changes, and then submit a pull request. For significant changes, please first open an issue to discuss the proposed alterations.
 
@@ -248,6 +299,3 @@ If you find our work useful, please cite our [paper](https://arxiv.org/abs/2402.
   year={2024}
 }
 ```
-
-
-
