@@ -37,13 +37,20 @@ _open_ended_prompts = {
                           " >>>\nPlease imagine that you are in the above scenario. Knowing yourself as you do, describe how you would feel and what you would do (not what you should do). The response should follow the format of motive (the reason for taking action) - emotion (internal feelings) - approach (how to take action) - behavior.' "],
 }
 
+_jung_cognitive_function_test_prompts = {
+        "type": "Jung cognitive function test",
+        "prefix_prompt": ["You are casually chatting with a friend named Alice. You completely trust her and are willing to share everything you know without reservation.\n",
+                          "Alice said: 'Do you agree this sentence: \n<<< ",
+                          " >>>\nTake a moment to think about this and respond Yes or No."],
+}
+
 # Function to construct the prompt based on the question type
 def prompt_construct(data):
     if data['type'] == "Cloze":
         sys_prompt = _cloze_prompts['prefix_prompt'][0]
         prefix_prompt = _cloze_prompts['prefix_prompt'][1] + data["question"]  + _cloze_prompts['prefix_prompt'][2]
         return sys_prompt, prefix_prompt
-    if data['type'] == "Single_choice":
+    elif data['type'] == "Single_choice":
         sys_prompt = _single_choice_prompts['prefix_prompt'][0]
         prefix_prompt = _single_choice_prompts['prefix_prompt'][1] + data["question"]  + " "
         options = data["options"]
@@ -51,7 +58,7 @@ def prompt_construct(data):
         prefix_prompt += " ".join(options)
         prefix_prompt += _single_choice_prompts['prefix_prompt'][2]
         return sys_prompt, prefix_prompt
-    if data['type'] == "Multiple_choices":
+    elif data['type'] == "Multiple_choices":
         sys_prompt = _multiple_choices_prompts['prefix_prompt'][0]
         prefix_prompt = _multiple_choices_prompts['prefix_prompt'][1] + data["question"]  + " "
         # shuffle for position bias
@@ -59,6 +66,10 @@ def prompt_construct(data):
         random.shuffle(options)
         prefix_prompt += " ".join(options)
         prefix_prompt += _multiple_choices_prompts['prefix_prompt'][2]
+        return sys_prompt, prefix_prompt
+    elif data['type'] == "Jung_cognitive_function_test":
+        sys_prompt = _jung_cognitive_function_test_prompts['prefix_prompt'][0]
+        prefix_prompt = _jung_cognitive_function_test_prompts['prefix_prompt'][1] + data["question"]  + _jung_cognitive_function_test_prompts['prefix_prompt'][2]
         return sys_prompt, prefix_prompt
     else: ## open-ended
         sys_prompt = _open_ended_prompts['prefix_prompt'][0]
@@ -87,7 +98,7 @@ class LLMPDataset(BaseDataset):
 
 
 valid_LLMP_question_types = [
-    'Cloze', 'Single_choice', 'Multiple_choices', 'Open-Ended' ## Five questions for each type
+    'Cloze', 'Single_choice', 'Multiple_choices', 'Open-Ended', 'Jung_cognitive_function_test' ## Five questions for each type
 ]
 
 class LLMPEvaluator(BaseEvaluator):
@@ -122,13 +133,18 @@ class LLMPEvaluator(BaseEvaluator):
                     for t in re.findall(r'\b[A-F]\b', temp_output):
                         model_answer.append(t)
             
-                        
-        else: ## cloze
+        elif self.question_type == 'cloze':
             index = model_output.find("The answer is")
             if index != -1:
                 model_answer = model_output.lower()[index: ]
             else:
-                model_answer = model_output.lower()
+                model_answer = model_output.lower()                
+        else: ## Jung_cognitive_function_test
+            model_output = model_output.lower()
+            if "yes" in model_output:
+                model_answer = 1
+            else: # no or invalid
+                model_answer = 0
 
         return model_answer
 
@@ -140,7 +156,7 @@ class LLMPEvaluator(BaseEvaluator):
     def score(self, predictions, references):
         print("scoring")
         if self.question_type not in [
-                'Cloze', 'Single_choice', 'Multiple_choices'
+                'Cloze', 'Single_choice', 'Multiple_choices', ""
         ]:
             return {'score': 0} ## open-ended does not count
         elif self.question_type == 'Cloze':
