@@ -6,14 +6,15 @@ from opencompass.models.LLMP import LLMP_OpenAI
 
 
 
-Question_Directory = "/root/Desktop/LLMP/Characters/Questions"
+Question_Directory = "/root/abc/Human-Simulacra-main/LLMP/Characters/Questions"
 Character_name = "Mary Jones" 
 
 Question_type = [
-    "Cloze",
-    "Single_choice",
-    "Multiple_choices",
-    "Open-Ended"
+    # "Cloze",
+    # "Single_choice",
+    # "Multiple_choices",
+    # "Open-Ended",
+    "Jung_cognitive_function_test"
 ]
 
 Method_list = [
