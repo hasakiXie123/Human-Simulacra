@@ -1,0 +1,3 @@
+In this directory, we have disclosed the evaluation questions for all 11 characters. It is worth noting that to ensure the validity of the Open-Ended question used in the Observer Report assessment, we employed psychological test items designed in the study [1] and obtained these test items through email communication with the corresponding psychology experts. Therefore, we do not have the right to disclose them online directly. Please email us if you need access to this part of the data.
+
+[1] P. Mussel, T. Gatzka, and J. Hewig. Situational judgment tests as an alternative measure for personality assessment. European Journal of Psychological Assessment, 2016.
