@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. low-income, extended family",
+            "B. middle-income, single-parent family",
+            "C. high-income, nuclear family",
+            "D. high-income, blended family"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have earned a professional degree",
+            "B. have earned a master's degree",
+            "C. have completed high school",
+            "D. have earned an associate degree"
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. saving for a down payment on retirement",
+            "B. exploring different cultures",
+            "C. adopting a consistently healthy lifestyle",
+            "D. fostering new meaningful friendships"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What happened to Ethan and you after you finished your volunteer work?",
+        "options": [
+            "A. Ethan became a star athlete. I am proud of him.",
+            "B. Ethan began writing a novel. It is a huge mistake.",
+            "C. Ethan's grades improved and he joined the school's drama club.",
+            "D.  Ethan moved to a new city. We never see each other again."
+        ],
+        "answer": ["C"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What strategy did you use to improve your time management skills?",
+        "options": [
+            "A. Hiring a personal assistant.",
+            "B. Attending weekly productivity seminars.",
+            "C. Implementing a time-blocking method.",
+            "D. Using a digital calendar app"
+        ],
+        "answer": ["C"]
+    }
+]

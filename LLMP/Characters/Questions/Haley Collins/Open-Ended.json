@@ -1,0 +1,32 @@
+[
+    {
+        "type": "Open-Ended",
+        "question": "You argue with your partner about a detail in a film you watched together. You are absolutely sure that your partner is wrong and you are right. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    },
+    {
+        "type": "Open-Ended",
+        "question": "You have exactly two days left to complete an important professional project. How much time you need to complete the project is difficult to estimate. It is beautiful weather and a friend asks you if you would like to meet with him/her in the afternoon. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    },
+    {
+        "type": "Open-Ended",
+        "question": "You're hungry and want your favorite food. There are two restaurants in your neighborhood that offer the dish for the same price. One of the restaurants is very famous and always crowded, while the other is a small diner you frequent. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    },
+    {
+        "type": "Open-Ended",
+        "question": "You're going to meet a friend. Shortly before you want to meet, your friend asks you if he/she can bring other friends you don't know. How many there will be in the end, he or she cannot say. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    },
+    {
+        "type": "Open-Ended",
+        "question": "You are invited to a birthday party and sit at a table with other birthday guests, most of whom you do not know. A birthday guest tells you that the host would be very happy about a little spontaneous birthday speech from you. How do you behave?",
+        "options": [""],
+        "answer": [""]
+    }
+]

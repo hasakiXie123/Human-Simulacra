@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. gymnastics",
+            "B. watching movies",
+            "C. astronomy",
+            "D. horseback riding",
+            "E. fishing",
+            "F. playing video games"
+        ],
+        "answer": [
+            "B",
+            "D",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. creating a daily schedule",
+            "B. learning a new language",
+            "C. saving a certain amount of money",
+            "D. reading certain books",
+            "E. engaging in regular exercise",
+            "F. implementing a new time management strategy"
+        ],
+        "answer": [
+            "C",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any cherished memories with your parents?",
+        "options": [
+            "A. Sure. There was a time when my dad and I attended cooking classes for a month. We would bring the cakes we made in class home to share with my mom.",
+            "B. My parents wanted to cultivate my interest in history, so we would visit historical museums every weekend. However, they clearly did not succeed.",
+            "C. We took a family vacation to a theme park. It was a wonderful time, and I made many good friends there",
+            "D. Yes, my mother is a natural storyteller. I often spend evenings listening to my mother's captivating stories.",
+            "E. I used to build paper airplanes with my father at the kitchen table. Through these shared experiences around making and flying paper airplanes, I developed an intimate bond with my father",
+            "F. We used to share family meals that transformed simple dishes into grand feasts through storytelling. Each evening, our modest kitchen table became the center of a magical experience."
+        ],
+        "answer": [
+            "D",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How do you view others' opinions of you and your relationships with them?",
+        "options": [
+            "A. I often feel misunderstood and worry about others' perceptions.",
+            "B. I am indifferent to others' opinions and prefer to focus on my own path.",
+            "C. I value others' opinions and see them as an opportunity for personal growth.",
+            "D. I appreciate constructive feedback and use it to strengthen relationships.",
+            "E. I strive to build genuine connections by being open and honest in my interactions.",
+            "F. I frequently let others' opinions dictate my decisions."
+        ],
+        "answer": [
+            "C",
+            "D",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How do you save money?",
+        "options": [
+            "A. By growing herbs and vegetables in a home garden.",
+            "B. By cooking meals at home instead of dining out frequently.",
+            "C. By ignoring sales and discounts to avoid impulse buys.",
+            "D. By creating a detailed budget and tracking expenses.",
+            "E. By investing in high-risk stocks with research.",
+            "F. By purchasing second-hand clothes every year."
+        ],
+        "answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. listening to music",
+            "B. martial arts",
+            "C. singing",
+            "D. stamp collecting",
+            "E. playing guitar",
+            "F. dancing"
+        ],
+        "answer": [
+            "B",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. volunteering",
+            "B. reducing procrastination",
+            "C. completing minor home improvement projects",
+            "D. adopting a balanced diet",
+            "E. planning short trips or outings",
+            "F. attending networking events"
+        ],
+        "answer": [
+            "A",
+            "C",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How did you view rituals in relationships?",
+        "options": [
+            "A. Of little importance, as I value genuine interactions.",
+            "B. Essential for building trust and understanding.",
+            "C. Important for maintaining routine and stability.",
+            "D. Unnecessary, I prefer simple, heartfelt gestures.",
+            "E. Useful for celebrating milestones in a more authentic way.",
+            "F. Not required, we should focus on authenticity and connection."
+        ],
+        "answer": [
+            "A",
+            "D",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "What qualities are you proud of in yourself?",
+        "options": [
+            "A. Creativity",
+            "B. Procrastination",
+            "C. Logical reasoning",
+            "D. Punctuality",
+            "E. Independence",
+            "F. Indecisiveness"
+        ],
+        "answer": [
+            "A",
+            "C",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How do you relieve stress in your life?",
+        "options": [
+            "A. Procrastinating on important tasks.",
+            "B. Practicing mindfulness and meditation.",
+            "C. Engaging in regular physical exercise.",
+            "D. Playing the guitar.",
+            "E. Spending excessive time on social media.",
+            "F. Overeating comfort food."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    }
+]

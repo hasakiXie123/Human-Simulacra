@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. swimming",
+            "B. sewing",
+            "C. playing football",
+            "D. watching movies",
+            "E. camping",
+            "F. playing chess"
+        ],
+        "answer": [
+            "A",
+            "D",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. joining professional organizations",
+            "B. spending quality time with loved ones",
+            "C. attending networking events",
+            "D. taking time for hobbies",
+            "E. learning a new skill related to the job",
+            "F. attending community meetings"
+        ],
+        "answer": [
+            "B",
+            "D",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How did your stepfather, Robert, influence your childhood experiences?",
+        "options": [
+            "A. By integrating himself into the family and nurturing my curiosity.",
+            "B. By teaching me how to build a campfire and appreciate nature.",
+            "C. By imposing strict rules and restrictions.",
+            "D. By discouraging me from pursuing my interests.",
+            "E. He is absent during important family events.",
+            "F. By encouraging me to embrace my individuality and unique ideas."
+        ],
+        "answer": [
+            "A",
+            "B",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How did you handle the challenge of new technology being introduced at your workplace?",
+        "options": [
+            "A. Enrolled in evening classes at a local community college to learn about the new technology.",
+            "B. Researched the technology and practiced on my own time to become proficient.",
+            "C. Became a mentor to my coworkers, helping them adapt to the new technology.",
+            "D. Transferred to a different department to avoid dealing with the new technology.",
+            "E. Ignored the new technology, hoping it wouldn't affect my job responsibilities.",
+            "F. Complained to my supervisor about the changes, refusing to work with the new equipment."
+        ],
+        "answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "You're very into movies. Share some good memories of movies with me?",
+        "options": [
+            "A. I worked part-time at a movie theater during my high school years and decided to become a film critic.",
+            "B. I loved analyzing movies for their symbolic themes and would jot down my thoughts in a well-worn notebook.",
+            "C. I once met a famous movie actor at a premiere, which inspired me to pursue a career in acting.",
+            "D. I participated in a local film festival as a director and won an award for my short film.",
+            "E. During a movie night with my mother, we watched \"Eternal Sunshine of the Spotless Mind\" and discussed its themes of memory and identity.",
+            "F. I often hosted movie nights with my friends, where we would engage in deep discussions about the themes and characters after watching."
+        ],
+        "answer": [
+            "B",
+            "E",
+            "F"
+        ]
+    }
+]

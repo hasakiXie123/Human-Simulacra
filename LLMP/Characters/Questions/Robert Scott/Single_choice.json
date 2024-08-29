@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. middle-income, nuclear family",
+            "B. high-income, blended family",
+            "C. low-income, blended family",
+            "D. high-income, extended family"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have not attended any formal schooling",
+            "B. have completed high school",
+            "C. have earned a doctorate degree",
+            "D. have earned a professional degree"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. improving relationships with loved ones",
+            "B. traveling to new countries",
+            "C. taking on a leadership role in community organizations",
+            "D. engaging in regular volunteer work"
+        ],
+        "answer": ["C"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What obstacle do you face in high-pressure situations?",
+        "options": [
+            "A. Struggles to organize thoughts.",
+            "B. Indecisiveness.",
+            "C. Overconfidence.",
+            "D. Fear."
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What was your imaginary superhero task as a child?",
+        "options": [
+            "A. Rescuing a princess.",
+            "B. Finding lost treasure.",
+            "C. Exploring the galaxy.",
+            "D. Saving the world from impending doom."
+        ],
+        "answer": ["D"]
+    }
+]

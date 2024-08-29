@@ -1,0 +1,32 @@
+[
+    {
+        "type": "Cloze",
+        "question": "What is your name?",
+        "options": [""],
+        "answer": ["Erica Walker"]
+    },
+    {
+        "type": "Cloze",
+        "question": "Could you please tell me your gender?",
+        "options": [""],
+        "answer": ["Female"]
+    },
+    {
+        "type": "Cloze",
+        "question": "How old are you?",
+        "options": [""],
+        "answer": ["44"]
+    },
+    {
+        "type": "Cloze",
+        "question": "When is your birthday? Answer me in YYYY-MM-DD format.",
+        "options": [""],
+        "answer": ["1979-04-07"]
+    },
+    {
+        "type": "Cloze",
+        "question": "What is your line of work?",
+        "options": [""],
+        "answer": ["Architect"]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. middle-income, single-parent family",
+            "B. high-income, extended family",
+            "C. high-income, blended family",
+            "D. low-income, blended family"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have not attended any formal schooling",
+            "B. have earned a doctorate degree",
+            "C. have earned an associate degree",
+            "D. have earned a master's degree"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. visiting specific landmarks",
+            "B. engaging in regular volunteer work",
+            "C. changing careers",
+            "D. starting a family"
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What sparked your passion for architecture during your teenage years?",
+        "options": [
+            "A. A high school art class.",
+            "B. My parents told me that I must be a architect.",
+            "C. A book about famous architects.",
+            "D. A field trip to the city's historic district."
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What did you learn from a painful breakup?",
+        "options": [
+            "A. True love involves being accepted for who I am.",
+            "B. I don't want to fall in love anymore. I want to focus on my career.",
+            "C. I need to find someone who really loves me, not someone I love.",
+            "D. True love means changing for someone else."
+        ],
+        "answer": ["A"]
+    }
+]

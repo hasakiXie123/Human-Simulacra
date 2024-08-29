@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. stamp collecting",
+            "B. hunting",
+            "C. doing sports",
+            "D. listening to curious stories",
+            "E. making jokes",
+            "F. birdwatching"
+        ],
+        "answer": [
+            "C",
+            "D",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. throwing parties",
+            "B. trying the latest video game",
+            "C. creating a daily schedule",
+            "D. supporting local businesses and events",
+            "E. having more sense of humor",
+            "F. saving a certain amount of money"
+        ],
+        "answer": [
+            "A",
+            "B",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How did your parents support your imaginative endeavors?",
+        "options": [
+            "A. They often participated in my imaginative games and stories.",
+            "B. They encouraged me to ask questions and explore ideas.",
+            "C. They restricted my creative activities to focus on academics. I think it is a right move.",
+            "D. Actually, they discouraged me from spending time on storytelling.",
+            "E. They displayed my vibrant drawings on her bedroom walls. They are proud of me.",
+            "F. They enrolled me in science classes."
+        ],
+        "answer": [
+            "A",
+            "B",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How do you get along with your friends?",
+        "options": [
+            "A. By frequently criticizing them to improve their behavior.",
+            "B. I actively listen and provide support during difficult times.",
+            "C. By sharing personal stories and experiences openly.",
+            "D. By organizing themed gatherings and events that everyone enjoys.",
+            "E. I am born to be the leader. I competed with them to assert dominance.",
+            "F. I do not like social interactions. I avoid spending time with them to maintain distance."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How did you manage to do so well in your studies?",
+        "options": [
+            "A. By organizing class discussions that encourage diverse perspectives.",
+            "B. By creating unique analogies to explain complex concepts.",
+            "C. By submitting only written essays.",
+            "D. By creating visual art projects in every class.",
+            "E. By incorporating storytelling and humor into presentations.",
+            "F. By avoiding group projects."
+        ],
+        "answer": [
+            "A",
+            "B",
+            "E"
+        ]
+    }
+]

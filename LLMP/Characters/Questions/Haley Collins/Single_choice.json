@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. low-income, single-parent family",
+            "B. middle-income, single-parent family",
+            "C. middle-income, blended family",
+            "D. high-income, single-parent family"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have completed elementary school",
+            "B. have earned a master's degree",
+            "C. have attended college but have not earned a degree",
+            "D. have earned a professional degree"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. taking on a leadership role in community organizations",
+            "B. personal self-improvement",
+            "C. fostering new meaningful friendships",
+            "D. starting own business"
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What do you think of your father?",
+        "options": [
+            "A. My father is a selfish person. He is stingy and didn't allow me to go to school. I despise him.",
+            "B. I admire my father. He is my teacher and has taught me strength and patience.",
+            "C. My father is an optimistic person. He can make the atmosphere relaxed and enjoyable.",
+            "D. I do not have a father. My mother raised me on her own."
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "How important is the sense of community to you, and how do you actively contribute to fostering a strong, supportive network around you?",
+        "options": [
+            "A. I appreciate a strong community but prefer to contribute in more passive ways, such as attending events rather than organizing them.",
+            "B. I find community involvement to be of little personal importance and rarely engage in communal activities.",
+            "C. Community is essential; I actively participate in local events, volunteer, and support initiatives that strengthen communal bonds.",
+            "D. My focus is more on individual relationships rather than the broader community aspect."
+        ],
+        "answer": ["C"]
+    }
+]

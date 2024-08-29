@@ -1,0 +1,32 @@
+[
+    {
+        "type": "Cloze",
+        "question": "What is your name?",
+        "options": [""],
+        "answer": ["James Jones"]
+    },
+    {
+        "type": "Cloze",
+        "question": "Could you please tell me your gender?",
+        "options": [""],
+        "answer": ["Male"]
+    },
+    {
+        "type": "Cloze",
+        "question": "How old are you?",
+        "options": [""],
+        "answer": ["35"]
+    },
+    {
+        "type": "Cloze",
+        "question": "When is your birthday? Answer me in YYYY-MM-DD format.",
+        "options": [""],
+        "answer": ["1988-09-13"]
+    },
+    {
+        "type": "Cloze",
+        "question": "What is your line of work?",
+        "options": [""],
+        "answer": ["Van driver"]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. low-income, blended family",
+            "B. high-income, blended family",
+            "C. middle-income, single-parent family",
+            "D. high-income, nuclear family"
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have earned a professional degree",
+            "B. have completed high school",
+            "C. have earned a bachelor's degree",
+            "D. have attended college but have not earned a degree"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. adopting a consistently healthy lifestyle",
+            "B. buying a home",
+            "C. improving relationships with loved ones",
+            "D. saving enough to retire comfortably"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "How did you respond to new technology being introduced at workplace?",
+        "options": [
+            "A. I resisted the change and refused to learn.",
+            "B. I quickly adapted and helped implement the new technology.",
+            "C. I left the company to pursue a different career.",
+            "D. I sought legal action against the company."
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What event teached your the importance of kindness, empathy, and perseverance?",
+        "options": [
+            "A. My mother's teachings and resilience in supporting the family.",
+            "B. Attending a prestigious private school.",
+            "C. Meeting a famous philosopher.",
+            "D. Winning a scholarship to college."
+        ],
+        "answer": ["A"]
+    }
+]

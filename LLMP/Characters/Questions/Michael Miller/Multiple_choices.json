@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. gardening",
+            "B. photography",
+            "C. watching movies",
+            "D. running",
+            "E. traveling",
+            "F. golfing"
+        ],
+        "answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. paying down debt",
+            "B. creating a daily schedule",
+            "C. joining professional organizations",
+            "D. connecting with mentors",
+            "E. completing minor home improvement projects",
+            "F. learning a new skill related to the job"
+        ],
+        "answer": [
+            "B",
+            "C",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "What lesson from your childhood did you carry into adulthood?",
+        "options": [
+            "A. The ability to network and build business relationships.",
+            "B. The necessity of accumulating wealth for happiness.",
+            "C. The importance of following trends to fit in.",
+            "D. The value of hard work and perseverance.",
+            "E. The significance of education and lifelong learning.",
+            "F. The importance of kindness and empathy."
+        ],
+        "answer": [
+            "D",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Tell me about your interesting experiences while working as a tour guide.",
+        "options": [
+            "A. Engaging with a retired schoolteacher from Italy who shared inspiring stories of her students.",
+            "B. Discovering a hidden treasure map in an old East Town building during a tour.",
+            "C. Introducing visitors to East Town's vibrant mural, explaining its significance and the stories it represents.",
+            "D. Reuniting a lost dog with its owner who was on one of his tours.",
+            "E. Listening to a young couple on their honeymoon discuss navigating cultural differences during their travels.",
+            "F. Hosting a celebrity on a private tour of East Town's historic sites."
+        ],
+        "answer": [
+            "A",
+            "C",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How do you plan to achieve your long-term goals?",
+        "options": [
+            "A. By neglecting planning and relying on spontaneous decisions.",
+            "B. By relying on winning a lottery to fund all future endeavors.",
+            "C. By engaging in regular volunteer work to give back to the community.",
+            "D. By avoiding any new learning opportunities and sticking to current knowledge.",
+            "E. By creating a daily schedule to effectively manage time and increase productivity.",
+            "F. By joining professional organizations to network and learn from others in his field. "
+        ],
+        "answer": [
+            "C",
+            "E",
+            "F"
+        ]
+    }
+]

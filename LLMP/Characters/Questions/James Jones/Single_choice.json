@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. middle-income, extended family",
+            "B. high-income, blended family",
+            "C. middle-income, nuclear family",
+            "D. low-income, nuclear family"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have completed high school",
+            "B. have completed elementary school",
+            "C. have earned a professional degree",
+            "D. have attended college but have not earned a degree"
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. traveling to new countries",
+            "B. paying off the mortgage",
+            "C. adopting a consistently healthy lifestyle",
+            "D. planning for a post-retirement career"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "How did you initially view your job as a van driver?",
+        "options": [
+            "A. As a boring task with no future",
+            "B. It is a temporary job until something better came along.",
+            "C. It represents freedom and exploration.",
+            "D. I do this job for a living."
+        ],
+        "answer": ["C"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What is the first major accomplishment for you?",
+        "options": [
+            "A. Buying my first car. A bright green Lamborghini. I've been saving it for a long time.",
+            "B. Winning a community award. I often visit the elderly in the community and do small tasks for them within my ability, such as fixing light bulbs and sweeping the floor.",
+            "C. Completing high school. The pressure to contribute financially often weighed heavily on me, tempting me to forsake academic aspirations for immediate earnings.",
+            "D. Marrying my husband was my first major accomplishment. I love him very much, and our life is very happy."
+        ],
+        "answer": ["C"]
+    }
+]

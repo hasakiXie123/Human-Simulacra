@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. scuba diving",
+            "B. playing video games",
+            "C. bowling",
+            "D. skateboarding",
+            "E. origami",
+            "F. running"
+        ],
+        "answer": [
+            "B",
+            "D",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. reading certain books",
+            "B. learning a new language",
+            "C. reducing procrastination",
+            "D. planning short trips or outings",
+            "E. building relationships with superiors",
+            "F. obtaining a certification"
+        ],
+        "answer": [
+            "A",
+            "B",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "What do you think of your mother?",
+        "options": [
+            "A. She is a lawyer and is very busy with work, leaving her with almost no time to spend with me.",
+            "B. She is a compassionate pediatrician, offering emotional support to her young patients during trying times.",
+            "C. She was a fierce advocate for her patients. From her, I learn the importance of empathy and the power of a kind word.",
+            "D. My mother is a great woman who inspired me to become an architect.",
+            "E. I come from a single-parent family, and I have never met my mother.",
+            "F. She is an excellent pediatric nurse, and she loves me very much."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Your grandparents often share their life stories with you. Could you pick a few to share with me?",
+        "options": [
+            "A. One is the story of my great-uncle. He is a brilliant civil engineer who never shies away from challenges. He designed a bridge spanning both banks at the invitation of the government.",
+            "B. One is the story of the SpongeBob SquarePants. It is a cheerful and optimistic sea sponge who lives in a pineapple under the sea.",
+            "C. One is the story of my great-aunt, a physician who had defied societal expectations to pursue her passion for medicine. I admire her courage in breaking free from the confines of gender roles.",
+            "D. One part of the story is about how my mother became a lawyer. She studied diligently in law school and successfully joined a law firm after graduation.",
+            "E. One is the story of my grandfather’s military service. He told me the lessons about honor and sacrifice",
+            "F. One of the stories is about how my father gave up a high-paying nursing job at a hospital to work part-time at a community clinic in order to take care of me."
+        ],
+        "answer": [
+            "A",
+            "C",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Your long-term goal is visiting specific landmarks. Tell me more details about these landmarks. Have you selected any specific places yet?",
+        "options": [
+            "A. I don't want to go anywhere. Work has exhausted me, and I just want to use the little time I have to rest.",
+            "B. Sure. I've always felt that there's something magical about standing before the Parthenon in Athens. I often imagine myself walking through the columns of the Parthenon.",
+            "C. Yes, I've always been fascinated by historical landmarks that carry rich cultural significance. One of my top goals is to visit Machu Picchu in Peru. The idea of exploring the ancient Incan city high in the Andes is incredibly exciting to me.",
+            "D. One place on my list is the Great Wall of China. I'm captivated by its sheer scale and the history behind its construction.",
+            "E. Visiting Notre-Dame de Paris is my dream! I long to stand beneath the towering spires, gazing up at the rose windows that cast colors across the stone floor.",
+            "F. I want to go on an adventure in the Amazon rainforest. I imagine trekking through the dense jungle, surrounded by the sounds of exotic wildlife and the vibrant colors of unique plants."
+        ],
+        "answer": [
+            "B",
+            "D",
+            "E"
+        ]
+    }
+]

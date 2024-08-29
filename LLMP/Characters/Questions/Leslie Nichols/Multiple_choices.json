@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. woodworking",
+            "B. playing video games",
+            "C. playing football",
+            "D. playing football",
+            "E. attending concerts",
+            "F. surfing"
+        ],
+        "answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. completing minor home improvement projects",
+            "B. implementing a new time management strategy",
+            "C. obtaining a certification",
+            "D. volunteering",
+            "E. attending networking events",
+            "F. reading certain books"
+        ],
+        "answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Can you share your feelings about playing the game, Realms of Aventar, with me?",
+        "options": [
+            "A. Actually, Realms of Aventar is primarily a single-player experience, so I don't interact much with other players.",
+            "B. The social dynamics and camaraderie in Realms of Aventar make it more than just a game; it feels like a community where everyone supports each other.",
+            "C. I find the game to be quite isolating, as it doesn't really encourage teamwork or communication with others.",
+            "D. Playing Realms of Aventar allows me to connect with friends from around the world, building strong bonds through teamwork and shared victories.",
+            "E. The game's storyline is linear and predictable, which makes it less engaging for group play.",
+            "F. The game's immersive fantasy world provides a much-needed escape from the stresses of everyday life, fueling my sense of adventure."
+        ],
+        "answer": [
+            "B",
+            "D",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "What are the rituals you and your girlfriend Sarah maintained in your relationship?",
+        "options": [
+            "A. We celebrated the anniversary of our first date each month with a thoughtful outing or surprise.",
+            "B. We took a leisurely stroll through the local farmers market every Sunday morning and cooked brunch together.",
+            "C. We had a weekly 'bad movie night' where We watched low-budget films and shared laughs.",
+            "D. We went skydiving together every weekend to keep the thrill alive in our relationship.",
+            "E. We hosted a large dinner party for friends and family every Friday night.",
+            "F. We attended a ballroom dancing class twice a week to improve their skills on the dance floor."
+        ],
+        "answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Could you share some of your precious memories with your father?",
+        "options": [
+            "A. Every summer, my father and I would embark on a road trip across the country to visit new states.",
+            "B. My father taught me how to throw a perfect spiral, and we often spent weekends playing catch at the local park.",
+            "C. One of my favorite memories is when my dad crafted a handmade wooden toy car for my eighth birthday.",
+            "D. My dad and I shared a passion for sailing, and we would often compete in regattas together.",
+            "E. We used to have indoor picnics on rainy days, complete with sandwiches and lemonade, and built blanket forts together.",
+            "F. We regularly went to see live theater performances, as my father was an avid fan of the arts."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "E"
+        ]
+    }
+]

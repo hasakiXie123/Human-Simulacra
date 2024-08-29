@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. low-income, blended family",
+            "B. middle-income, single-parent family",
+            "C. high-income, extended family",
+            "D. high-income, nuclear family"
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have earned an associate degree",
+            "B. have completed high school",
+            "C. have earned a bachelor's degree",
+            "D. have earned a professional degree"
+        ],
+        "answer": ["C"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. improving mental health",
+            "B. starting a family",
+            "C. fostering new meaningful friendships",
+            "D. earning a promotion"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "How did you view your educational journey?",
+        "options": [
+            "A. It is a stepping stone towards true learning and growth.",
+            "B. I dislike studying. My parents also think it's useless. They would rather have me work and earn money.",
+            "C. Learning is an obligation. Everyone must receive a basic education to better navigate social life.",
+            "D. I love studying. It's my only chance to succeed. I hope to change my destiny through education."
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "How do you contribute to your community?",
+        "options": [
+            "A. Through public speaking events",
+            "B. By organizing community events",
+            "C. By leading local political campaigns",
+            "D. Through quiet acts of service and volunteering"
+        ],
+        "answer": ["D"]
+    }
+]

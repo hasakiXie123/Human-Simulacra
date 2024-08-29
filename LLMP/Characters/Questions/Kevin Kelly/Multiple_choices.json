@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. reading",
+            "B. playing chess",
+            "C. yoga",
+            "D. horseback riding",
+            "E. swimming",
+            "F. metalworking"
+        ],
+        "answer": [
+            "A",
+            "C",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. planning short trips or outings",
+            "B. learning a new skill related to the job",
+            "C. creating a daily schedule",
+            "D. volunteering",
+            "E. joining professional organizations",
+            "F. completing minor home improvement projects"
+        ],
+        "answer": [
+            "A",
+            "B",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "What do you think about your college life?",
+        "options": [
+            "A. It provided a strong foundation for my professional and personal growth.",
+            "B. I felt disconnected and didn't gain much from it.",
+            "C. It was a valuable period for expanding my knowledge and exploring new ideas.",
+            "D. I found it unengaging and a waste of time",
+            "E. It challenged me to develop resilience and adaptability.",
+            "F. It was mostly a social experience with little academic benefit."
+        ],
+        "answer": [
+            "A",
+            "C",
+            "E"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Your family situation is complex. You have a mother, a stepfather, and a half-sister. Could you share some memories about them with me?",
+        "options": [
+            "A. I used to play sports with my stepfather every weekend, which strengthened our bond.",
+            "B. My stepfather and I bonded over fixing things around the house together.",
+            "C. My half-sister attended my graduation ceremony, and she was proud of me.",
+            "D. I remember my mother working double shifts to ensure we had everything we needed.",
+            "E. My half-sister often relied on me for help with her homework, and we grew closer because of it.",
+            "F. My mother frequently organized family trips abroad to strengthen our family ties."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How did you approach your career as a software developer?",
+        "options": [
+            "A. By relying solely on the knowledge I gained during my college education.",
+            "B. By continuously updating my skill set with the latest programming languages and methodologies.",
+            "C. By collaborating effectively with my team to achieve project goals.",
+            "D. By prioritizing personal interests over professional responsibilities.",
+            "E. By applying analytical skills to solve complex problems creatively.",
+            "F. By focusing on individual tasks and avoiding team projects."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "E"
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. playing football",
+            "B. gardening",
+            "C. singing",
+            "D. astronomy",
+            "E. camping",
+            "F. playing piano"
+        ],
+        "answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. reducing procrastination",
+            "B. obtaining a certification",
+            "C. volunteering",
+            "D. paying down debt",
+            "E. supporting local businesses and events",
+            "F. practicing relaxation techniques like meditation or yoga"
+        ],
+        "answer": [
+            "C",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Considering your multifaceted life and the values that guide you, which aspects are most influential in shaping your decisions and path forward?",
+        "options": [
+            "A. The pursuit of knowledge and continuous learning drives me; I am always seeking to expand my understanding and skills, especially in areas that benefit my community.",
+            "B. Financial security and wealth accumulation are my top priorities; I believe in making strategic choices that enhance my economic stability.",
+            "C. Creative expression and pursuing my artistic interests are essential to my happiness and guide many of my life choices.",
+            "D. The desire for personal autonomy and independence is a key factor; I strive to create a life where I am totally free from external constraints and expectations.",
+            "E. Strong sense of community and belonging drives many of my choices.",
+            "F. My personal relationships and the well-being of my loved ones are paramount; they are the primary considerations in any decision I make."
+        ],
+        "answer": [
+            "A",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "In envisioning your ideal living space, which elements are most crucial to you, reflecting your innermost desires and the lifestyle you wish to lead?",
+        "options": [
+            "A. Modern, minimalist residence that serves as a testament to my success and financial acumen, symbolizing my achievements.",
+            "B. Spacious, well-equipped workshop where I can immerse myself in my electrical repair projects.",
+            "C. Cozy, welcoming space designed for hosting gatherings, where friends and neighbors can come together for meaningful conversations and shared experiences.",
+            "D. Home with a cozy backyard that offers a clear view of the night sky, where I can set up my telescope and indulge in my passion for astronomy.",
+            "E. Versatile living area with ample room for physical activities, where I can engage in my passion for sports and maintain an active lifestyle.",
+            "F. Quiet retreat with a personal library and observatory, allowing me to indulge in my love for reading and astronomy, away from the hustle and bustle."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "What is your mother's perspective towards your behavior to repair old equipment and use the living space as a makeshift workshop?",
+        "options": [
+            "A. Initial skepticism about the practicality of dedicating so much space to repair work.",
+            "B. Reluctance to fully embrace the hobby as a significant part of our lives, preferring more traditional pastimes and questioning the long-term benefits.",
+            "C. Gradual acknowledgment of the value in my activities, appreciating how these projects contributed to my problem-solving skills and independence.",
+            "D. Encouragement to pursue my interests further, suggesting additional resources and sometimes participating in projects to foster a supportive atmosphere.",
+            "E. Concerns for safety and the proper use of tools, leading to setting strict guidelines and supervision during my early tinkering phases.",
+            "F. Complete disapproval and discouragement, often insisting that I focus solely on conventional hobbies and academic pursuits instead of what she deemed 'unproductive' tinkering with old gadgets."
+        ],
+        "answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    }
+]

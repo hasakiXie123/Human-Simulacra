@@ -1,0 +1,87 @@
+[
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any hobbies you are passionate about?",
+        "options": [
+            "A. cycling",
+            "B. listening to music",
+            "C. boating",
+            "D. shopping",
+            "E. rock climbing",
+            "F. gymnastics"
+        ],
+        "answer": [
+            "B",
+            "C",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Do you have any short-term goals you are excited about?",
+        "options": [
+            "A. planning short trips or outings",
+            "B. joining professional organizations",
+            "C. obtaining a certification",
+            "D. building relationships with superiors",
+            "E. taking time for hobbies",
+            "F. paying down debt"
+        ],
+        "answer": [
+            "A",
+            "D",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Who are the people that have had a significant impact on your life?",
+        "options": [
+            "A. Clara, a childhood friend who had interest in my adventures.",
+            "B. Mr. Jenkins, a elderly neighbor who shared stories of East Town's history with me.",
+            "C. My grandmother, who taught me the art of cooking and the importance of intuition.",
+            "D. Anika, a fellow culinary enthusiast and former partner who shared my passion for food.",
+            "E. Tom, a local celebrity chef. I admired him.",
+            "F. Lisa, a cousin of me, who lived overseas."
+        ],
+        "answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "Cooking is both your profession and your hobby. Could you share some stories about your experiences with cooking?",
+        "options": [
+            "A. I remember cooking alongside my grandmother, learning the art of blending flavors and the importance of intuition in the kitchen, which inspired my lifelong passion for culinary arts.",
+            "B. I often capture the dynamic moments in the kitchen with my camera, blending them with the aesthetics of food.",
+            "C. I also have a passion for dance, and often incorporate its rhythm and discipline into my kitchen routines.",
+            "D. I apply color theory to plating in the kitchen, and many customers praise my aesthetic sense.",
+            "E. I once hosted a memorable dinner party for friends, where I showcased my latest culinary experiments and fostered deep connections through shared meals and laughter.",
+            "F. I recall an experience of experimenting with Southeast Asian cuisine, where I learned to balance sweet, spicy, and sour flavors, leading to the creation of a signature dish that became a favorite among my patrons."
+        ],
+        "answer": [
+            "A",
+            "E",
+            "F"
+        ]
+    },
+    {
+        "type": "Multiple_choices",
+        "question": "How do you view interpersonal relationships?",
+        "options": [
+            "A. I prefer to keep all relationships strictly professional, avoiding any personal connections or emotional involvement.",
+            "B. I view relationships as largely transactional, focusing more on what I can gain rather than fostering genuine connections.",
+            "C. I view interpersonal relationships as a dance of give-and-take, where communication and empathy are key to maintaining harmony and understanding.",
+            "D. I often rely on my intuition to navigate interpersonal relationships, which helps me understand and empathize with others on a deeper level.",
+            "E. I value deep connections and believe that true friendships are built on mutual respect and shared experiences, rather than superficial interactions.",
+            "F. I see interpersonal relationships primarily as a competitive arena, where the goal is to assert dominance and achieve personal gain."
+        ],
+        "answer": [
+            "C",
+            "D",
+            "E"
+        ]
+    }
+]

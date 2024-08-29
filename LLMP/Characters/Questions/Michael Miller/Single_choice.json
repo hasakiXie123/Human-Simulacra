@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. middle-income, single-parent family",
+            "B. low-income, extended family",
+            "C. high-income, single-parent family",
+            "D. low-income, single-parent family"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have earned a professional degree",
+            "B. have earned a bachelor's degree",
+            "C. have earned a master's degree",
+            "D. have completed high school"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. engaging in regular volunteer work.",
+            "B. planning for a post-retirement career.",
+            "C. improving mental health.",
+            "D. starting own business."
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "How did your mother support your education?",
+        "options": [
+            "A. She enrolled me in a prestigious private school.",
+            "B. She homeschooled me.",
+            "C. She worked multiple jobs to support my education.",
+            "D. She hired a math tutor for me."
+        ],
+        "answer": ["C"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What sparked your initial interest in photography?",
+        "options": [
+            "A. My father's encouragement.",
+            "B. Borrowing my mother's old camera and capturing the vibrant life and stories in East Town.",
+            "C. A gift from my aunt.",
+            "D. I want to win a school photography competition."
+        ],
+        "answer": ["B"]
+    }
+]

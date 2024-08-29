@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. low-income, extended family",
+            "B. middle-income, extended family",
+            "C. high-income, single-parent family",
+            "D. high-income, extended family"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have earned a master's degree",
+            "B. have completed elementary school",
+            "C. have not attended any formal schooling",
+            "D. have attended college but have not earned a degree"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. traveling to new countries",
+            "B. improving mental health",
+            "C. saving for a down payment on retirement",
+            "D. personal self-improvement"
+        ],
+        "answer": ["A"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What activity did you often engage in with your friends in the secret club, \"The Dream Explorers\"?",
+        "options": [
+            "A. Solving mathematical puzzles.",
+            "B. Exploring the neighborhood's hidden corners.",
+            "C. Playing video games.",
+            "D. Practicing gymnastics routines."
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What inspired you to leave college and pursue a career in the culinary world?",
+        "options": [
+            "A. I received a scholarship offer from a prestigious culinary school.",
+            "B. I suddenly dislike academic subjects.",
+            "C. I can make a lot of money as a chef.",
+            "D. My grandmother' encouraged me to follow my passion."
+        ],
+        "answer": ["D"]
+    }
+]

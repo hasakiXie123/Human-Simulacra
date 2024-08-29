@@ -1,0 +1,57 @@
+[
+    {
+        "type": "Single_choice",
+        "question": "Could you share with me the type of family structure you come from?",
+        "options": [
+            "A. high-income, blended family",
+            "B. middle-income, nuclear family",
+            "C. high-income, extended family",
+            "D. low-income, nuclear family"
+        ],
+        "answer": ["B"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "May I ask about your educational background?",
+        "options": [
+            "A. have earned a doctorate degree",
+            "B. have earned an associate degree",
+            "C. have earned a high school degree",
+            "D. have earned a master's degree"
+        ],
+        "answer": ["C"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "Speaking of the future, do you have any long-term goals you are working towards?",
+        "options": [
+            "A. achieving and maintaining a healthy weight",
+            "B. improving relationships with loved ones",
+            "C. traveling to new countries",
+            "D. being a psychological counselor to help others"
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "How did you contribute to your group project in the biology class?",
+        "options": [
+            "A. By creating a detailed PowerPoint presentation.",
+            "B. By designing a colorful poster.",
+            "C. By cheating.",
+            "D. By turning the ecosystem diagram into a story of a bustling city."
+        ],
+        "answer": ["D"]
+    },
+    {
+        "type": "Single_choice",
+        "question": "What is your favorite activity that helped you reflect and find inspiration?",
+        "options": [
+            "A. Watching movies.",
+            "B. Jogging in the park.",
+            "C. Riding my bike through East Town.",
+            "D. Attending art classes."
+        ],
+        "answer": ["C"]
+    }
+]
