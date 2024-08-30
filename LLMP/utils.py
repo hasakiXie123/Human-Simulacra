@@ -3,9 +3,14 @@ import random
 import os
 import sys
 import numpy as np
+import json 
+import itertools
+import torch
+from colorama import Fore, Style
+
 from sentence_transformers import SentenceTransformer, util
 from transformers import pipeline
-from Config.config import Current_Directory, LLM_Directory
+from Config.config import Current_Directory, LLM_Directory, Profiles_Path, Attributes_Directory
 
 def calculate_redundancy(chunks):
     # Load the sentence transformer model
@@ -103,15 +108,101 @@ def print_statistics(life_story):
 
 
 
+def calculate_similarity_between_traits():
+
+    model = SentenceTransformer(os.path.join(LLM_Directory, "all-mpnet-base-v2"))
+
+    with open(os.path.join(Attributes_Directory, "traits.txt"), "r", encoding="UTF-8") as file:
+            trait_pool = {} # {string:[[],[]]}
+            traits = file.readlines()
+
+            for idx, data in enumerate(traits):
+                rank = (idx % 9)
+                if rank == 0:
+                    trait = data.replace("\n", "")
+                    trait_pool[trait] = []
+                else:
+                    des_sens_for_dimension = data.split(". ")
+                    des_sens_for_dimension[-1] = des_sens_for_dimension[-1][:-2]
+                    trait_pool[trait].append(des_sens_for_dimension)
+
+    ## the semantic textual similarity within one rank in one tendency
+    similarity_within_one_trait_one_rank = {}
+    avg_similarity_within_one_trait_one_rank = 0.0
+    count = 0
+    for trait in trait_pool.keys():
+        descriptions_per_trait = trait_pool[trait]
+        for idx, descriptions_per_rank in enumerate(descriptions_per_trait):
+            embeddings = model.encode(descriptions_per_rank)
+            similarities = util.cos_sim(embeddings, embeddings)
+            mask = ~torch.eye(similarities.size(0), dtype=torch.bool)
+            non_diag_elements = similarities[mask]
+            mean_similarity = non_diag_elements.mean()
+            key = trait + " at rank: " + str(idx + 1)
+            similarity_within_one_trait_one_rank[key] = mean_similarity
+            avg_similarity_within_one_trait_one_rank += mean_similarity
+            count += 1
+            
+    avg_similarity_within_one_trait_one_rank /= count # 0.3037
+    print("similarity within one trait one rank: ", similarity_within_one_trait_one_rank)
+    print(Fore.RED + "average similarity within one trait one rank: " + str(avg_similarity_within_one_trait_one_rank) + Style.RESET_ALL)
+    print()
+
+    ## the semantic textual similarity within one tendency
+    similarity_within_one_trait = {}
+    avg_similarity_within_one_trait = 0.0
+    count = 0
+    for trait in trait_pool.keys():
+        descriptions_per_trait = trait_pool[trait]
+        embeddings_per_rank = []
+        for idx, descriptions_per_rank in enumerate(descriptions_per_trait):
+            embeddings = model.encode(descriptions_per_rank)
+            embeddings_per_rank.append(embeddings)
+        combinations = list(itertools.combinations(embeddings_per_rank, 2))
+        temp = 0.0
+        for combo in combinations:
+            similarities = util.cos_sim(combo[0], combo[1])
+            mean_similarity = similarities.mean()
+            avg_similarity_within_one_trait += mean_similarity
+            temp += mean_similarity
+            count += 1
+        similarity_within_one_trait[trait] = temp / len(combinations)
+        
+        
+    avg_similarity_within_one_trait /= count # 0.3169
+    print("similarity within one trait: ", similarity_within_one_trait)
+    print(Fore.RED + "average similarity within one trait: " + str(avg_similarity_within_one_trait) + Style.RESET_ALL)
+    print()
+
+    ## the semantic textual similarity between eight tendency
+    similarity_within_eight_trait = {}
+    avg_similarity_within_eight_trait = 0.0
+    count = 0
+    embeddings = []
+    traits = []
+    for trait in trait_pool.keys():
+        descriptions_per_trait = trait_pool[trait]
+        flattened_descriptions = [item for sublist in descriptions_per_trait for item in sublist]
+        embeddings_per_trait = model.encode(flattened_descriptions)
+        embeddings.append(embeddings_per_trait)
+        traits.append(trait)
+    combinations = list(itertools.combinations(embeddings, 2))
+    traits_combinations = list(itertools.combinations(traits, 2))
+    for idx, combo in enumerate(combinations):
+        similarities = util.cos_sim(combo[0], combo[1])
+        mean_similarity = similarities.mean()
+        avg_similarity_within_eight_trait += mean_similarity
+        count += 1
+        key = traits_combinations[idx][0] + " vs " + traits_combinations[idx][1]     
+        similarity_within_eight_trait[key] = mean_similarity
+    avg_similarity_within_eight_trait /= count # 0.2309
+    print("similarity within eight trait: ", similarity_within_eight_trait)
+    print(Fore.RED + "average similarity within eight trait: " + str(avg_similarity_within_eight_trait) + Style.RESET_ALL)
+     
 
 
 def main():
-    os.chdir(Current_Directory)
-
-    with open("Biography.txt", "r", encoding="UTF-8") as file:
-        chunks = file.readlines()
-    expandable_chunk_idxs = chunk_sorting(chunks)
-    print()
+    calculate_similarity_between_traits()
 
 if __name__ == "__main__":
     main()
