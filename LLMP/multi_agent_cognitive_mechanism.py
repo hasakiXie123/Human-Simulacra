@@ -884,7 +884,7 @@ def main():
         Multi_turn_chat_with_naive_prompt(args.character_name)
     else:
         print(Fore.RED + f"Starting multi-turn chat with blank model, which does not know anything about the character. Type 'exit' to end the chat." + Style.RESET_ALL)
-        Multi_turn_chat_with_blank_model(args.character_name)
+        Multi_turn_chat_with_blank_model()
         
     # agent = Top_agent("Mary Jones")
     # agent.add_new_attributes({"Favorite Color": "Green", "Favorite Author": "Ada Lovelace"})
