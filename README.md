@@ -1,12 +1,12 @@
 # Human Simulacra: Benchmarking the Personification of Large Language Models 
 <div align="center">
     <a>Qiujie Xie<sup>1</sup></a>&emsp;
-    <a>Qiming Feng<sup>*1</sup></a>&emsp;
-    <a>Tianqi Zhang<sup>*2</sup></a>&emsp;
+    <a>Qiming Feng<sup>1</sup></a>&emsp;
+    <a>Tianqi Zhang<sup>2</sup></a>&emsp;
     <a>Qingqiu Li<sup>1</sup></a>&emsp; <br>
     <a>Linyi Yang<sup>3</sup></a>&emsp;
-    <a>Yuejie Zhang<sup>†1</sup></a>&emsp;
-    <a>Rui Feng<sup>†1</sup></a>&emsp; <br>
+    <a>Yuejie Zhang<sup>1†</sup></a>&emsp;
+    <a>Rui Feng<sup>1†</sup></a>&emsp; <br>
     <a>Liang He<sup>4</sup></a>&emsp;
     <a>Shang Gao<sup>5</sup></a>&emsp;
     <a>Yue Zhang<sup>3</sup></a>&emsp;
@@ -292,10 +292,12 @@ Contributions to enhance the usability and quality of this dataset are always we
 ## Citation
 If you find our work useful, please cite our [paper](https://arxiv.org/abs/2402.18180)😊:
 ```bibtex
-@article{xie2024human,
-  title={Human Simulacra: Benchmarking the Personification of Large Language Models}, 
-  author={Xie, Qiuejie and Feng, Qiming and Zhang, Tianqi and Li, Qingqiu and Yang, Linyi and Zhang, Yuejie and Feng, Rui and He, Liang and Gao, Shang and Zhang, Yue},
-  journal={arXiv preprint arXiv:2402.18180},
-  year={2024}
+@inproceedings{
+xie2025human,
+title={Human Simulacra: Benchmarking the Personification of Large Language Models},
+author={Qiujie Xie and Qiming Feng and Tianqi Zhang and Qingqiu Li and Linyi Yang and Yuejie Zhang and Rui Feng and Liang He and Shang Gao and Yue Zhang},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=BCP5nAHXqs}
 }
 ```
